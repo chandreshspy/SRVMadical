@@ -1,0 +1,19 @@
+Message :Procedure or function 'srv_sethomepage' expects parameter '@subHeding', which was not supplied.<br/>
+StackTrace :   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at ClientDLL.DataLib.GetScalarStringStoredProcData(Connection connType, String strSP, SqlParameter[] arrSPParams) in E:\Dinesh\Dinesh\GitSRVPL\MYSRV\ClientDLL\DataLib.cs:line 141
+   at ClientDLL.ClientDAL.SetHompagedetails(List`1 detail) in E:\Dinesh\Dinesh\GitSRVPL\MYSRV\ClientDLL\ClientDAL.cs:line 29
+   at SRV.Controllers.AdminHomeController.UploadHome(ImageModel model) in E:\Dinesh\Dinesh\GitSRVPL\MYSRV\SRV\Controllers\AdminHomeController.cs:line 137
+Date :11/27/2018 02:32:07 PM
+
+-----------------------------------------------------------------------------
+

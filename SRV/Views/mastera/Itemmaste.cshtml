@@ -1,0 +1,403 @@
+﻿
+@{
+    ViewBag.Title = "Itemmaste";
+    Layout = "~/Views/Shared/navigation.cshtml";
+}
+<head>
+    <link href="~/css/itemmaster.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+    <h3 class="h1">-: ITEM MASTER :- </h3>
+    <div class="signup-form">
+        <form method="post">
+
+
+            <div class="col-md-12" style="border: 2px solid #777; padding:10px;">
+                <div class="row">
+                    <label class="col-md-1 control-label">Name :</label>
+                    <div class="col-md-4 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <label class="col-md-1 control-label">Company:</label>
+                    <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <div class="col-md-2 inputGroupContainer"><input type="text" style="width: 43%;" class="form-control" name="Name" required="required"></div>
+                </div>
+
+
+                <div class="row">
+                    <label class="col-md-1 control-label">Packing :</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <label class="col-lg-offset-0">Unit :</label>
+                    <div class="col-md-1"><input type="text" class="form-control" name="Name" value="1" required="required"></div>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <label class="col-lg-offset-0">Status :</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <label class="col-md-1 control-label">Mfg.By	 :</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <label class="col-lg-offset-0 control-label">Bar Code:</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <label class="col-md-1 control-label">Schedule:</label>
+                    <div class="col-md-1 inputGroupContainer"> <input type="text" class="form-control" name="Name" required="required"></div>
+                </div>
+                <div class="row">
+                    
+                    <label class="col-md-1 control-label">Box Qty :</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <label class="col-lg-offset-0 control-label">Case Qty :</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" value="1" required="required"></div>
+                    
+                    <label class="col-lg-offset-0 control-label">Min. Level:</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <label class="col-lg-offset-0 control-label">Max. Level:</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <label class="col-lg-offset-0 control-label">Location:</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <label class="col-lg-offset-0 control-label">Division:</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <label class="col-lg-offset-0 control-label">UPC:</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                </div>
+
+                <div class="row">
+
+                    
+                    <label class="col-lg-offset-4 control-label">Lock Inv:</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <label class="col-md-1 control-label">Flage:</label>
+                    <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    
+
+                    </div>
+                </div>
+            <div class="col-md-12" style="border:2px solid black">
+
+                <div class="col-md-2" style="border: 2px solid #777;margin-left: -15px;width: 17%; margin-bottom:-1%;">
+
+                    <div class="row">
+                        <h4 class="h4"> Sale Details </h4>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-4 control-label">  S.Rate: </label>
+                        <div class="col-md-7"><input type="text" class="form-control" name="Name" required="required"></div>
+                        
+
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <label class="col-lg-offset-1 control-label">S.C.(%):</label>
+                        <div class="col-md-5"><input type="text" class="form-control" name="Name" required="required"></div>
+                    </div>
+                    <div class="row">
+                        <label class="col-lg-offset-1 control-label">MRP:</label>
+                        <div class="col-md-7"><input type="text" class="form-control" name="Name" required="required"></div>
+                        <label class="col-lg-offset-0 control-label">Net</label>
+                    </div>
+                    <div class="row">
+                        <label class="col-lg-offset-0 control-label">W.S. Rate:</label>
+                        <div class="col-md-4"><input type="text" class="form-control" name="Name" required="required"></div>
+                        <div class="col-md-3"><input type="text" class="form-control" name="Name" required="required"></div>
+                    </div>
+                    <div class="row">
+                        <label class="col-lg-offset-0 control-label">Spl.Rate:</label>
+                        <div class="col-md-4"><input type="text" class="form-control" name="Name" required="required"></div>
+                        <div class="col-md-4"><input type="text" class="form-control" name="Name" required="required"></div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <label class="col-lg-offset-0 control-label">Min.GP:</label>
+                        <div class="col-sm-4"><input type="text" class="form-control" name="Name" required="required"></div>
+                        
+                    </div>
+                    <br>
+                    
+                </div>
+                <div class="col-md-2" style="border: 2px solid #777;margin-left: 0%;width: 20%;">
+                    
+                        <div class="row">
+                            <h4 class="h4"> Purchase Details </h4>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    <div class="row">
+                        <label class="col-md-4 control-label">P.Rate:</label>
+                        <div class="col-md-7"><input type="text" class="form-control" name="Name" required="required"></div>
+
+                    </div>
+                    <div class="row">
+                        <label class="col-md-5 control-label">S.C.(%):</label>
+                        <div class="col-md-6 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="row">
+                        <label class="col-md-5 control-label">Excise:</label>
+                        <div class="col-md-6 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    </div>
+                    <br>
+                    
+                    <div class="row">
+                        <label class="col-md-4 control-label">Scheme:</label>
+                        <div class="col-md-4 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                        +<div class="col-md-3 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    </div>
+                    <div class="row">
+                        <label class="col-lg-offset-6 control-label">NR:</label>
+                        <div class="col-md-4 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                        
+                    </div>
+                    <br>
+                    
+                </div>
+                <div class="col-md-2" style="border: 2px solid #777;margin-left: 0%;width: 20%;">
+
+                    <div class="row">
+                        <h4 class="h4"> GST Details </h4>
+                        <br />
+                        <br>
+                        <br>
+                        
+                        
+                        
+                    </div>
+                    <div class="row">
+                        <label style="background-color:#eb0f0f; color:white;" class="col-lg-push-1 control-label">HSN Code:</label>
+                        <div class="col-md-7"><input type="text" class="form-control" name="Name" required="required"></div>
+
+                    </div>
+                    <div class="row">
+                        <label style="background-color:#eb0f0f; color:white;" class="col-lg-offset-1">CGST%:</label>
+                        <div class="col-md-6"><input type="text" class="form-control" name="Name" required="required"></div>
+
+                    </div>
+                    <div class="row">
+                        <label style="background-color:#eb0f0f; color:white;" class="col-lg-offset-1 ">SGST%:</label>
+                        <div class="col-md-6"><input type="text" class="form-control" name="Name" required="required"></div>
+
+                    </div>
+                    <div class="row">
+                        <label style="background-color:#eb0f0f; color:white;" class="col-lg-offset-1 ">IGST%:</label>
+                        <div class="col-md-6"><input type="text" class="form-control" name="Name" required="required"></div>
+
+                    </div>
+                    <div class="row">
+                        <label style="background-color:#eb0f0f; color:white;" class="col-lg-offset-1">Cess%:</label>
+                        <div class="col-md-6"><input type="text" class="form-control" name="Name" required="required"></div>
+
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                       
+
+                </div>
+
+                <div class="col-md-6" style="border: 2px solid #777;margin-left: 0%;">
+                    <div class="row">
+                        <h4 class="h4"> Other Details </h4>
+                        <br />
+                        <br>
+                    </div>
+                    <div class="col-md-3" style="border: 2px solid #777;margin-left: -3%;">
+                        <br>
+                        <div class="row">
+                            <label class="col-lg-offset-0 control-label">VAT(%):</label>
+                            <div class="col-md-7 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+
+                        </div>
+                        <div class="row">
+                            <label class="col-md-6 control-label">Expiry:</label>
+                            <div class="col-md-6 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                        </div>
+                        <div class="row">
+                            <label class="col-md-6 control-label">Generic:</label>
+                            <div class="col-md-6 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        
+                        </div>
+                    <div class="col-md-5" style="border: 2px solid #777;margin-left: 0%;">
+                        <br>
+                        <div class="row">
+                            <label class="col-lg-offset-0 control-label">Fixed Dis.(Y/N/M):</label>
+                            <div class="col-md-5 inputGroupContainer"><input type="text" class="form-control" name="Name" Value="N" required="required"></div>
+                            
+                        </div>
+
+                        <div class="row">
+                            <label class="col-lg-offset-0 control-label">Inclusive:</label>
+                            <div class="col-md-4 inputGroupContainer"><input type="text" class="form-control" Value="Y" name="Name" required="required"></div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row">
+                            <label class="col-lg-offset-0 control-label">Max Inv.Qty:</label>
+                            <div class="col-md-4 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <div class="row">
+                            <label class="col-lg-offset-0 control-label">Locks:</label>
+                            <div class="col-md-3 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                            <label class="col-lg-offset-0 control-label">Max.Dis.:</label>
+                            <div class="col-md-3 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        
+
+                    </div>
+                    <div class="col-lg-offset-4" style="border: 2px solid #777;  margin-left: -3%; margin-block-end:22%; margin-inline-end: -3%;">
+                        <div class="row">
+                            <label class="col-lg-offset-0 control-label">Bar Code:</label>
+                            <div class="col-md-7 inputGroupContainer"><input type="text" class="form-control" value="0.00" name="Name" required="required"></div>
+                        </div>
+                        <div class="row">
+                            <label class="col-lg-offset-0 control-label">Def.Qty:</label>
+                            <div class="col-md-4 inputGroupContainer"><input type="text" class="form-control" value="0.00" name="Name" required="required"></div>
+
+
+                        </div>
+                        <div class="row">
+                            <label class="col-lg-offset-0 control-label">Volume:</label>
+                            <div class="col-md-4 inputGroupContainer"><input type="text" class="form-control" value="0.00" name="Name" required="required"></div>
+                        </div>
+                        <div class="row">
+                            <label class="col-lg-offset-0 control-label">Comp.Name(BC):</label>
+                            <div class="col-md-4 inputGroupContainer"><input type="text" class="form-control" value="0.00" name="Name" required="required"></div>
+                        </div>
+                        <div class="row">
+                            <label class="col-lg-push-0 control-label">Comman Item:</label>
+                            <div class="col-md-4 inputGroupContainer"><input type="text" class="form-control" value="0.00" name="Name" required="required"></div>
+                        </div>
+                        <div class="row">
+                            <label class="col-lg-offset-0 control-label">Prescription Req.:</label>
+                            <div class="col-md-4 inputGroupContainer"><input type="text" class="form-control" value="0.00" name="Name" required="required"></div>
+                        </div>
+                        <div class="row">
+                            <label class="col-lg-offset-0 control-label">Series Lock:</label>
+                            <div class="col-md-4 inputGroupContainer"><input type="text" class="form-control" value="0.00" name="Name" required="required"></div>
+                        
+                        
+                        </div>
+
+                       
+                        
+
+                    </div>
+                    </div>
+            </div>
+
+            <div class="col-md-12" style="border:2px solid black">
+                <div class="row">
+                    <label class="col-lg-offset-5 control-label">Current Scheme:</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+
+
+                </div>
+                <div class="row">
+                    <label class="col-lg-offset-6 control-label">Category:</label>
+                    <div class="col-md-1  inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <div class="col-md-4  inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+               </div>
+                <div class="row">
+                    <label style="color:rebeccapurple;" class="col-lg-offset-6 control-label">Commodity Code:</label>
+                    <div class="col-md-1"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <div class="col-md-3  inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+
+                </div>
+                <div class="row">
+                    <label style="color:lightgreen;" class="col-md-12 control-label">Generics:</label>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <label class="col-md-offset-0 control-label">1 :</label>
+                        <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                        
+                        <div class="col-md-pull-3 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                        <div class="col-lg-pull-0 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                        <label class="col-md-offset-1 control-label">2 :</label>
+                        <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+
+                        <div class="col-md-pull-3 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                        <div class="col-lg-pull-0 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                        
+                       
+                    </div>
+                    <div class="row">
+                        <label class="col-md-offset-0 control-label">3 :</label>
+                        <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+
+                        <div class="col-md-pull-3 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                        <div class="col-lg-pull-0 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                        <label class="col-md-offset-1 control-label">4 :</label>
+                        <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+
+                        <div class="col-md-pull-3 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                        <div class="col-lg-pull-0 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+
+
+                    </div>
+                    </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <label style="color:lightgreen;" class="col-md-12 control-label"> Other Generics:</label>
+                    </div>
+                    
+                        <div class="row">
+                            <label class="col-md-offset-0 control-label">5 :</label>
+                            <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+
+                            <div class="col-md-pull-3 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                            <div class="col-lg-pull-0 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                            <label class="col-md-offset-1 control-label">6 :</label>
+                            <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+
+                            <div class="col-md-pull-3 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                            <div class="col-lg-pull-0 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-12" style="margin-left: 91%;">
+
+                        <input type="button" value="Save" />
+                        <input type="button" value="Exit" />
+
+                    </div>
+
+
+                </div>
+
+
+
+        </form>
+        </body>
+

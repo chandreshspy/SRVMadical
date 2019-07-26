@@ -1,0 +1,82 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="~/css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="~/css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="~/css/bootstrap.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="~/css/magnific-popup.css">
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="~/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/css/owl.theme.default.min.css">
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="~/css/flexslider.css">
+    <!-- Flaticons  -->
+    <link rel="stylesheet" href="~/fonts/flaticon/font/flaticon.css">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="~/css/style.css">
+    <!-- Modernizr JS -->
+    <script src="~/js/modernizr-2.6.2.min.js"></script>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/scripts/jquery-1.10.2.js"></script>
+    <link href="~/css/customstyle.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Srv Admin</title>
+
+    <style>
+        .editable {
+            width: 280px;
+            height: 80px;
+            border: 1px solid #ccc;
+            padding: 5px;
+            resize: both;
+            overflow: auto;
+        }
+    </style>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/scripts/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="table-responsive">
+                <table class="table">
+                    <tr>
+                        <td>
+                            <a href="/AdminHome/Home" class="Button">Home Page</a>
+                        </td>
+                        <td>
+                            <a href="/AdminHome/AboutUs" class="Button">About Us</a>
+                        </td>
+                        <td>
+                            <a href="/AdminHome/Ourservices" class="Button">Our Services</a>
+                        </td>
+                        <td>
+                            <a href="/AdminHome/PhotoGallery" class="Button">Photo Gallery</a>
+                        </td>
+                        <td>
+                            <a href="/Message/SendMessage" class="Button">Send Message</a>
+                        </td>
+                        <td>
+                            <a href="/Message/SendMail" class="Button">Send Mail</a>
+                        </td>
+                        <td>
+                            <a href="http://srvpathlab.com" class="Button">Log Out</a>
+                        </td>
+                    </tr>
+                   </table>
+                </div>
+            </div>
+        </div>
+    @RenderBody()
+</body>
+</html>

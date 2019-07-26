@@ -1,0 +1,137 @@
+﻿@{
+    ViewBag.Title = "Company";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-md-3">
+    <table>
+        <tr>
+            <td>
+                @*<input class="form-control mr-sm-2" type="text" id="CompanySearch" onkeyup="SearchCompanys()" placeholder="Search String" aria-label="Search">*@
+                @*</form>*@
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="col-md-6">
+    <div>
+        <table align="center">
+            <tr>
+                <td>
+                    -: Compony :-
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="form-control mr-sm-2" style="width:530px;" type="text" id="CompanySearch" onkeyup="SearchCompanys()" placeholder="Search String" aria-label="Search">
+                    @*</form>*@
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="max-height:250px; overflow:auto;">
+        <table class="table" id="dvCompanys"></table>
+    </div>
+</div>
+
+<div class="col-md-3">
+    <table class="table" id="tblbtnForComponyMaster">
+        <tr>
+            <td><input class="btn" type="button" value="New(F9)"></td>
+        </tr>
+        <tr>
+            <td><input class="btn" type="button" value="Edit(F3)"></td>
+        </tr>
+        <tr>
+            <td><input class="btn" type="button" value="Delete"></td>
+        </tr>
+        <tr>
+            <td><input class="btn" type="button" value="Exit"></td>
+        </tr>
+        <tr>
+            <td><input class="btn" type="button" value="Supplier List(F4)"></td>
+        </tr>
+        <tr>
+            <td><input class="btn" type="button" value="Delete With Items"></td>
+        </tr>
+        <tr>
+            <td><input class="btn" type="button" value="Staff Details(F2)"></td>
+        </tr>
+        <tr>
+            <td><input class="btn" type="button" value="Note Book"></td>
+        </tr>
+        <tr>
+            <td style="color:brown">Search by</td>
+        </tr>
+        <tr>
+            <td><input class="btn" type="button" value="New(F9)"></td>
+            <td><input class="btn" type="button" value="New(F9)"></td>
+        </tr>
+        <tr>
+            <td><input class="btn" type="button" value="New(F9)"></td>
+            <td><input class="btn" type="button" value="New(F9)"></td>
+        </tr>
+    </table>
+</div>
+
+
+<script>
+    function SearchCompanys() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("CompanySearch");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("dvCompanys");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+
+    $(document).ready(function () {
+        GetCompanys();
+    });
+    function Get_CompanyCode(code) {
+        alert(code);
+    }
+
+    function GetCompanys() {
+        var CompanyDtls = "";
+        var Urls = "../CompanyMaster/GetCompanys";
+        //var Urls = window.location.pathname + "/Proteus/GetLoginDetails";
+        var data = JSON.stringify({});
+        $.ajax({
+            url: Urls,
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            data: data, // pass that text to the server as a correct JSON String
+            success: function (resp) {
+                var JString = resp
+                dsnew = JSON.parse(JString);
+
+                if (dsnew && dsnew != 'null') {
+                    CompanyDtls = "<thead class='thead-dark'>" +
+                        "<tr><th scope='col'>Name</th>" +
+                        "<th scope='col'>Shortname</th>" +
+                        "</tr></thead><tbody>"
+                    for (var i = 0; i <= dsnew.Table.length - 1; i++) {
+                        CompanyDtls += "<tr onclick='Get_CompanyCode(" + dsnew.Table[i].Name + ");'><td>" + dsnew.Table[i].Name + "</td><td>" + dsnew.Table[i].Shortname + "</td></tr>"
+                    }
+                    CompanyDtls += "</tbody>";
+                }
+                $("#dvCompanys").html(CompanyDtls);
+            },
+            //error: function (xhr, ajaxOptions, thrownError) {
+            //}
+        });
+    }
+</script>   

@@ -1,0 +1,116 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AboutUs</title>
+</head>
+<div class="container">
+    <div class="panel panel-default">
+        <div class="table-responsive">
+            <form name='frmAccount' id='frmAccount'>
+                <table class="table">
+                    <tr><strong>About Us Details</strong></tr>
+                    <tr>
+                        <td>
+                            <label>Main Heading </label>
+                        </td>
+                        <td>
+                            <input type="text" id="dvMainhedin" name="Mainhedin" class="editable" value="" />
+                        </td>
+                        <td>
+                            <label>Main Sub Heading</label>
+                        </td>
+                        <td>
+                            <input type="text" id="dvmainsubheding" name="mainsubheding" class="editable" value="" />
+                        </td>
+                        <td>
+                            <label>Why chooseus first</label>
+                        </td>
+                        <td>
+                            <input type="text" id="dvwhychosfist" name="whychosfist" class="editable" value="" />
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>
+                            <label>Why chooseus second</label>
+                        </td>
+                        <td>
+                            <input type="text" id="dvwhychossecond" name="whychossecond" class="editable" value="" />
+                        </td>
+                        <td>
+                            <label for="file">What we do</label>
+                        </td>
+
+                        <td>
+                            <input type="text" id="dvwhtdowe" name="whtdowe" class="editable" value="" />
+                        </td>
+                        <td>
+                            <label>Offer Services</label>
+                        </td>
+                        <td>
+                            <input type="text" id="dvoffsrvic" name="offsrvic" class="editable" value="" />
+                            @*<div id="dvoffsrvic" name="dvoffsrvic" class="editable" contenteditable="true"></div>*@
+                        </td>
+                    </tr>
+                    <tr><td class="btn btn-info btn-file"><input type="file" id="file" name="file" multiple></td></tr>
+                </table>
+                </form>
+                <div style="margin-top: 20px;" class="col-sm-4 col-xs-12 col-lg-6 col-md-4">
+                    <input id="btnaboutus" class="btn btn-success" onclick="AddDetails()" type="submit" value="submit" />
+                </div>
+</div>
+    </div>
+    </div>
+<script>
+    $(document).ready(function () {
+    });
+    function AddDetails() {
+        var Mainhedin = $("#dvMainhedin").text();
+        var mainsubheding = $("#dvmainsubheding").text();
+        var whychosfist = $("#dvwhychosfist").text();
+        var whychossecond = $("#dvwhychossecond").text();
+        var whtdowe = $("#dvwhtdowe").text();
+        var offsrvic = $("#dvoffsrvic").text();
+        var fileUpload = $("#file").get(0);
+        var files = fileUpload.files;
+        var fileData = new FormData();
+        for (var i = 0; i < files.length; i++) {
+            fileData.append(files[i].name, files[i]);
+        }
+        var formData = new FormData($('#frmAccount')[0]);
+        var obj = JSON.stringify({
+            'Mainhedin': Mainhedin,
+            'mainsubheding': mainsubheding,
+            'whychosfist': whychosfist,
+            'whychossecond': whychossecond,
+            'whtdowe': whtdowe,
+            'offsrvic': offsrvic,
+            'file': fileData,
+        });
+        $.ajax({
+            url: '../AdminHome/AddABoutusdetails',
+            type: "POST",
+            contentType: false, // Not to set any content header
+            processData: false, // Not to process data
+            data: formData,
+            success: function (result) {
+                var res = result;
+            }
+        //$.ajax({
+        //    url: "/AdminHome/AddABoutusdetails",
+        //    type: 'POST',
+        //    async: false,
+        //    dataType: 'json',
+        //    contentType: 'application/json',
+        //    data: formData,
+        //    success: function (result) {
+        //        window.location.reload();
+        //    }
+        });
+    }
+    </script>

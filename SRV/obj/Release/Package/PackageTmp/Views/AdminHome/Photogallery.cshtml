@@ -1,0 +1,102 @@
+﻿@{
+
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>OURSERVICES</title>
+</head>
+<div class="container">
+    <div class="panel panel-default">
+        <div class="table-responsive">
+            <table class="table">
+                @if (Model != null)
+                {
+                    <tr>
+                        <td></td>
+                        <td>
+                            <strong> Banner Image</strong>
+                        </td>
+                        <td></td>
+                        <td><strong>Heding</strong></td>
+                        <td></td>
+                        <td><strong>SubHeding</strong></td>
+                        <td></td>
+                    </tr>
+                    foreach (var item in Model.HomePage)
+                    {
+                        <tr>
+                            <td></td>
+                            <td>
+                                <img src='/ImageData/Home/@item.file' style="width:55%;" />
+                            </td>
+                            <td></td>
+                            <td>@item.Heding</td>
+                            <td></td>
+                            <td>@item.subHeding</td>
+                            <td><input id="btndelete" onclick="btnDelete(@item.ImgID)" class="btn btn-success" type="submit" value="Delete" /></td>
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="table-responsive">
+            <form name='frmGallery' id='frmGallery'>
+                <table class="table">
+                    <tr>
+                        <td>
+                            <label for="file">Docter & Technician Photo</label>
+                        </td>
+                        <td class="btn btn-info btn-file">
+                            <input type="file" id="imgfile" name="imgfile" multiple>
+                        </td>
+                        <td>
+                            <label for="file">Docter & Technician Name</label>
+                        </td>
+                        <td><input type="text" id="imgName" name="imgName" /></td>
+                        <td>
+                            <label for="file">Docter & Technician Department </label>
+                        </td>
+                        <td><input type="text" id="imgDeprtment" name="imgDeprtment" /></td>
+                    </tr>
+
+                </table>
+            </form>
+            <table class="table">
+                <tr style="margin-top: 20px;" class="col-sm-4 col-xs-12 col-lg-6 col-md-4">
+                    <td>  <input id="btnUpload" class="btn btn-success" onclick="AddDetails()" type="submit" value="Add Photo" /></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</div>
+<script>
+    $(document).ready(function () {
+    });
+    function AddDetails() {
+        //var fileUpload = $("#file").get(0);
+        //var files = fileUpload.files;
+        //var fileData = new FormData();
+        //for (var i = 0; i < files.length; i++) {
+        //    fileData.append(files[i].name, files[i]);
+        //}
+        var formData = new FormData($('#frmGallery')[0]);
+        $.ajax({
+            url: '../AdminHome/AddDoctimage',
+            type: "POST",
+            contentType: false, // Not to set any content header
+            processData: false, // Not to process data
+            data: formData,
+            success: function (result) {
+                var res = result;
+            }
+        });
+    }
+</script>

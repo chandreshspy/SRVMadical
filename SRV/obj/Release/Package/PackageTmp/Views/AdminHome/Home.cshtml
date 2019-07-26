@@ -1,0 +1,266 @@
+﻿@*@model MultipleUploads.Models.DocumentModel*@
+@model dynamic
+
+@{
+
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<script type="text/javascript">
+</script>
+
+<div class="container">
+    <div class="panel panel-default">
+        <div class="table-responsive">
+            <table class="table">
+                @if (Model != null)
+                {
+                    <tr>
+                        <td></td>
+                        <td>
+                            <strong> Banner Image</strong>
+                        </td>
+                        <td></td>
+                        <td><strong>Heding</strong></td>
+                        <td></td>
+                        <td><strong>SubHeding</strong></td>
+                        <td></td>
+                    </tr>
+                    foreach (var item in Model.HomePage)
+                    {
+                        <tr>
+                            <td></td>
+                            <td>
+                                <img src='/ImageData/Home/@item.file' style="width:55%;" />
+                            </td>
+                            <td></td>
+                            <td>@item.Heding</td>
+                            <td></td>
+                            <td>@item.subHeding</td>
+                            <td><input id="btndelete" onclick="btnDelete(@item.ImgID)" class="btn btn-success" type="submit" value="Delete" /></td>
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="table-responsive">
+            <form name='frmAccount' id='frmAccount'>
+                <table class="table">
+                    <tr>
+                        <td>
+                            <label for="file">Banner</label>
+                        </td>
+                        <td class="btn btn-info btn-file">
+                            <input type="file" id="file" name="file" multiple>
+                        </td>
+                        <td>
+                            <label for="file">Heading </label>
+                        </td>
+                        <td><input type="text" id="txtbn" name="Heding" /></td>
+                        <td>
+                            <label for="file">Sub Heading </label>
+                        </td>
+                        <td><input type="text" id="subtxtbn" name="subHeding" /></td>
+                    </tr>
+
+                </table>
+                <table class="table">
+                    <tr style="margin-top: 20px;" class="col-sm-4 col-xs-12 col-lg-6 col-md-4">
+                        <td>  <input id="btnUpload" class="btn btn-success" type="button" value="Upload Banner" /></td>
+                    </tr>
+                </table>
+            </form>
+           
+            <div>
+
+                @*@if (Model != null)
+                    {
+                        <tr>
+                            <td colspan="2">
+                    <td><strong>Heding</strong></td>
+                            <td><strong>SubHeding</strong></td>
+                            <td>Action</td>
+                        </tr>
+                        foreach (var itemsub in Model.HomeSub)
+                        {
+                            <tr>
+                                <td colspan="2">
+                                </td>
+                                <td><div id="homhedingupdate" class="editable" contenteditable="true">@itemsub.Homeheding</div></td>
+                                <td><div id="subhomhedingUpdate" class="editable" contenteditable="true">@itemsub.HomeSubHeding</div></td>
+                                <td><input id="btnupdate" onclick="btnUpdatedetail(@itemsub.ID)" class="btn btn-success" type="submit" value="Update" />
+                                    <input id="btndeletesub" onclick="btnDelesub(@itemsub.ID)" class="btn btn-success" type="submit" value="Delete" /></td>
+                            </tr>
+                        }
+                    }*@
+                <table id="homsublist" class="table">
+                    <tr><strong>Update and Delete Sub Faciites</strong></tr>
+                </table>
+                <table class="table">
+                    <tr><strong>Add New Sub Faciites</strong></tr>
+                    <tr>
+                        <td colspan="2">
+                            <label>Diffrent type of facilites Heding</label>
+                        </td>
+                        <td>
+                            <div id="homheding" class="editable" contenteditable="true"></div>
+                        </td>
+                        <td>
+                            <label for="file">Facilites Sub Heding</label>
+                        </td>
+                        <td>
+                            <div id="subhomheding" class="editable" contenteditable="true"></div>
+                        </td>
+                    </tr>
+                </table>
+                <div style="margin-top: 20px;" class="col-sm-4 col-xs-12 col-lg-6 col-md-4">
+                    <input id="btnsubheding" class="btn btn-success" type="submit" value="submit" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    $(document).ready(function () {
+        homesubdetailbind();
+
+        $('#btnUpload').click(function () {
+            if (window.FormData !== undefined) {
+                var allowedFiles = [".xls", ".xlsx", ".csv", ".pdf"];
+                var fileUploadcheck = $("#file1");
+                var regex = new RegExp("([a-zA-Z0-9\s_\\.\-:])+(" + allowedFiles.join('|') + ")$");
+                var fileUpload = $("#file").get(0);
+                var files = fileUpload.files;
+                var fileData = new FormData();
+                for (var i = 0; i < files.length; i++) {
+                    fileData.append(files[i].name, files[i]);
+                }
+                var formData = new FormData($('#frmAccount')[0]);
+                $.ajax({
+                    url: '../AdminHome/UploadHome',
+                    type: "POST",
+                    contentType: false, // Not to set any content header
+                    processData: false, // Not to process data
+                    data: formData,
+                    success: function (result) {
+                        window.location.reload();
+                    }
+                });
+                window.location.reload();
+            }
+        });
+        $('#btnsubheding').click(function () {
+            if (window.FormData !== undefined) {
+                var homeheding = $("#homheding").html();
+                var homesubheding = $("#subhomheding").html();
+                var obj = JSON.stringify({
+                    'homeheding': homeheding,
+                    'homesubheding': homesubheding,
+                });
+                $.ajax({
+                    url: "/AdminHome/Homesubheding",
+                    type: 'POST',
+                    async: false,
+                    dataType: 'json',
+                    contentType: 'application/json',
+                    data: obj,
+                    success: function (result) {
+                        window.location.reload();
+                    }
+                });
+            }
+        });
+    });
+
+    function homesubdetailbind() {
+        debugger;
+        var strt = "";
+        var Urls = "/AdminHome/Homesubdetails";
+        //var Urls = window.location.pathname + "/Proteus/GetLoginDetails";
+        var data = JSON.stringify({});
+        $.ajax({
+            url: Urls,
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            data: data, // pass that text to the server as a correct JSON String
+            success: function (resp) {
+                debugger;
+                var JString = resp
+                var dsnew = JSON.parse(JString);
+                strt = "<tr><td colspan='2'><td><strong>Heding</strong></td>" +
+                    "<td><strong>SubHeding</strong></td><td colspan='2'>Action</td></tr>";
+                if (dsnew && dsnew != 'null' && dsnew.Table1.length > 0) {
+                    for (var k = 0; k <= dsnew.Table1.length - 1; k++) {
+                        strt += "<tr><td colspan='2'></td>" +
+                            "<td><div id='homhedingupdate" + dsnew.Table1[k].ID + "' class='editable' contenteditable='true'>" + dsnew.Table1[k].Homeheding + "</div></td>" +
+                            "<td><div id='subhomhedingUpdate" + dsnew.Table1[k].ID + "' class='editable' contenteditable='true'>" + dsnew.Table1[k].HomeSubHeding + "</div></td>" +
+                            "<td colspan='2'><input id='btnupdate' onclick='btnUpdatedetail(" + dsnew.Table1[k].ID + ")' class='btn btn-success' type='submit' value='Update' />" +
+                            "<input id='btndeletesub' onclick='btnDelesub(" + dsnew.Table1[k].ID + ")' class='btn btn-success' type='submit' value='Delete' /></td>" +
+                            "</tr>";
+                    }
+                    $("#homsublist").html('');
+                    $("#homsublist").html(strt);
+                }
+            }
+        });
+    }
+
+    function btnUpdatedetail(subID) {
+        var homeheding = $("#homhedingupdate" + subID).html();
+        var homesubheding = $("#subhomhedingUpdate" + subID).html();
+        var obj = JSON.stringify({
+            'subID': subID,
+            'homeheding': homeheding,
+            'homesubheding': homesubheding,
+        });
+        $.ajax({
+            url: "/AdminHome/HomesubhedingUpdate",
+            type: 'POST',
+            async: false,
+            dataType: 'json',
+            contentType: 'application/json',
+            data: obj,
+            success: function (result) {
+                window.location.reload();
+            }
+        });
+    }
+
+    function btnDelete(ImgID) {
+        var obj = JSON.stringify({
+            'ImgID': ImgID,
+        });
+        $.ajax({
+            url: "/AdminHome/HomListDelete",
+            type: 'POST',
+            async: false,
+            dataType: 'json',
+            contentType: 'application/json',
+            data: obj,
+            success: function (result) {
+                window.location.reload();
+            }
+        });
+    }
+    function btnDelesub(subID) {
+        var obj = JSON.stringify({
+            'subID': subID,
+        });
+        $.ajax({
+            url: "/AdminHome/Homesubdetaildelete",
+            type: 'POST',
+            async: false,
+            dataType: 'json',
+            contentType: 'application/json',
+            data: obj,
+            success: function (result) {
+                window.location.reload();
+            }
+        });
+    }
+</script>

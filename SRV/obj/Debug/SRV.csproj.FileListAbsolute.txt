@@ -1,0 +1,384 @@
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\ApplicationInsights.config
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\roslyn\csc.exe
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\roslyn\System.Collections.Immutable.dll
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\roslyn\vbc.exe
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\roslyn\VBCSCompiler.exe
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\roslyn\VBCSCompiler.exe.config
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\SRV.dll.config
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\SRV.dll
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\SRV.pdb
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\Microsoft.AI.Web.dll
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\Microsoft.AI.WindowsServer.dll
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\Microsoft.ApplicationInsights.dll
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\Microsoft.Web.Infrastructure.dll
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\System.Web.Helpers.dll
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\System.Web.Mvc.dll
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\System.Web.Razor.dll
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\System.Web.Webpages.Deployment.dll
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\System.Web.Webpages.dll
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\System.Web.Webpages.Razor.dll
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\Microsoft.AI.Web.xml
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\Microsoft.AI.WindowsServer.xml
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\Microsoft.ApplicationInsights.xml
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\System.Web.Razor.xml
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\System.Web.Webpages.xml
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\System.Web.Webpages.Deployment.xml
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\System.Web.Webpages.Razor.xml
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\System.Web.Helpers.xml
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\bin\System.Web.Mvc.xml
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\obj\Debug\SRV.csprojResolveAssemblyReference.cache
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\obj\Debug\SRV.dll
+c:\users\iz\documents\visual studio 2015\Projects\SRV\SRV\obj\Debug\SRV.pdb
+F:\labwebsite\dinesh\SRV\SRV\bin\ApplicationInsights.config
+F:\labwebsite\dinesh\SRV\SRV\bin\roslyn\csc.exe
+F:\labwebsite\dinesh\SRV\SRV\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\labwebsite\dinesh\SRV\SRV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\labwebsite\dinesh\SRV\SRV\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\labwebsite\dinesh\SRV\SRV\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\labwebsite\dinesh\SRV\SRV\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\labwebsite\dinesh\SRV\SRV\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\labwebsite\dinesh\SRV\SRV\bin\roslyn\System.Collections.Immutable.dll
+F:\labwebsite\dinesh\SRV\SRV\bin\roslyn\System.Reflection.Metadata.dll
+F:\labwebsite\dinesh\SRV\SRV\bin\roslyn\vbc.exe
+F:\labwebsite\dinesh\SRV\SRV\bin\roslyn\VBCSCompiler.exe
+F:\labwebsite\dinesh\SRV\SRV\bin\roslyn\VBCSCompiler.exe.config
+F:\labwebsite\dinesh\SRV\SRV\bin\SRV.dll.config
+F:\labwebsite\dinesh\SRV\SRV\bin\SRV.dll
+F:\labwebsite\dinesh\SRV\SRV\bin\SRV.pdb
+F:\labwebsite\dinesh\SRV\SRV\bin\Microsoft.AI.Agent.Intercept.dll
+F:\labwebsite\dinesh\SRV\SRV\bin\Microsoft.AI.DependencyCollector.dll
+F:\labwebsite\dinesh\SRV\SRV\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\labwebsite\dinesh\SRV\SRV\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\labwebsite\dinesh\SRV\SRV\bin\Microsoft.AI.Web.dll
+F:\labwebsite\dinesh\SRV\SRV\bin\Microsoft.AI.WindowsServer.dll
+F:\labwebsite\dinesh\SRV\SRV\bin\Microsoft.ApplicationInsights.dll
+F:\labwebsite\dinesh\SRV\SRV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\labwebsite\dinesh\SRV\SRV\bin\Microsoft.Web.Infrastructure.dll
+F:\labwebsite\dinesh\SRV\SRV\bin\System.Web.Helpers.dll
+F:\labwebsite\dinesh\SRV\SRV\bin\System.Web.Mvc.dll
+F:\labwebsite\dinesh\SRV\SRV\bin\System.Web.Razor.dll
+F:\labwebsite\dinesh\SRV\SRV\bin\System.Web.Webpages.Deployment.dll
+F:\labwebsite\dinesh\SRV\SRV\bin\System.Web.Webpages.dll
+F:\labwebsite\dinesh\SRV\SRV\bin\System.Web.Webpages.Razor.dll
+F:\labwebsite\dinesh\SRV\SRV\bin\Microsoft.AI.DependencyCollector.xml
+F:\labwebsite\dinesh\SRV\SRV\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\labwebsite\dinesh\SRV\SRV\bin\Microsoft.AI.Web.xml
+F:\labwebsite\dinesh\SRV\SRV\bin\Microsoft.AI.WindowsServer.xml
+F:\labwebsite\dinesh\SRV\SRV\bin\Microsoft.ApplicationInsights.xml
+F:\labwebsite\dinesh\SRV\SRV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\labwebsite\dinesh\SRV\SRV\bin\System.Web.Razor.xml
+F:\labwebsite\dinesh\SRV\SRV\bin\System.Web.Webpages.xml
+F:\labwebsite\dinesh\SRV\SRV\bin\System.Web.Webpages.Deployment.xml
+F:\labwebsite\dinesh\SRV\SRV\bin\System.Web.Webpages.Razor.xml
+F:\labwebsite\dinesh\SRV\SRV\bin\System.Web.Helpers.xml
+F:\labwebsite\dinesh\SRV\SRV\bin\System.Web.Mvc.xml
+F:\labwebsite\dinesh\SRV\SRV\obj\Debug\SRV.csprojResolveAssemblyReference.cache
+F:\labwebsite\dinesh\SRV\SRV\obj\Debug\SRV.dll
+F:\labwebsite\dinesh\SRV\SRV\obj\Debug\SRV.pdb
+E:\Dinesh\Dinesh\SRV\SRV\bin\ApplicationInsights.config
+E:\Dinesh\Dinesh\SRV\SRV\bin\roslyn\csc.exe
+E:\Dinesh\Dinesh\SRV\SRV\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Dinesh\Dinesh\SRV\SRV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Dinesh\Dinesh\SRV\SRV\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Dinesh\Dinesh\SRV\SRV\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Dinesh\Dinesh\SRV\SRV\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Dinesh\Dinesh\SRV\SRV\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Dinesh\Dinesh\SRV\SRV\bin\roslyn\System.Collections.Immutable.dll
+E:\Dinesh\Dinesh\SRV\SRV\bin\roslyn\System.Reflection.Metadata.dll
+E:\Dinesh\Dinesh\SRV\SRV\bin\roslyn\vbc.exe
+E:\Dinesh\Dinesh\SRV\SRV\bin\roslyn\VBCSCompiler.exe
+E:\Dinesh\Dinesh\SRV\SRV\bin\roslyn\VBCSCompiler.exe.config
+E:\Dinesh\Dinesh\SRV\SRV\bin\SRV.dll.config
+E:\Dinesh\Dinesh\SRV\SRV\bin\SRV.dll
+E:\Dinesh\Dinesh\SRV\SRV\bin\SRV.pdb
+E:\Dinesh\Dinesh\SRV\SRV\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Dinesh\Dinesh\SRV\SRV\bin\Microsoft.AI.DependencyCollector.dll
+E:\Dinesh\Dinesh\SRV\SRV\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Dinesh\Dinesh\SRV\SRV\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Dinesh\Dinesh\SRV\SRV\bin\Microsoft.AI.Web.dll
+E:\Dinesh\Dinesh\SRV\SRV\bin\Microsoft.AI.WindowsServer.dll
+E:\Dinesh\Dinesh\SRV\SRV\bin\Microsoft.ApplicationInsights.dll
+E:\Dinesh\Dinesh\SRV\SRV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Dinesh\Dinesh\SRV\SRV\bin\Microsoft.Web.Infrastructure.dll
+E:\Dinesh\Dinesh\SRV\SRV\bin\System.Web.Helpers.dll
+E:\Dinesh\Dinesh\SRV\SRV\bin\System.Web.Mvc.dll
+E:\Dinesh\Dinesh\SRV\SRV\bin\System.Web.Razor.dll
+E:\Dinesh\Dinesh\SRV\SRV\bin\System.Web.Webpages.Deployment.dll
+E:\Dinesh\Dinesh\SRV\SRV\bin\System.Web.Webpages.dll
+E:\Dinesh\Dinesh\SRV\SRV\bin\System.Web.Webpages.Razor.dll
+E:\Dinesh\Dinesh\SRV\SRV\bin\Microsoft.AI.DependencyCollector.xml
+E:\Dinesh\Dinesh\SRV\SRV\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Dinesh\Dinesh\SRV\SRV\bin\Microsoft.AI.Web.xml
+E:\Dinesh\Dinesh\SRV\SRV\bin\Microsoft.AI.WindowsServer.xml
+E:\Dinesh\Dinesh\SRV\SRV\bin\Microsoft.ApplicationInsights.xml
+E:\Dinesh\Dinesh\SRV\SRV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Dinesh\Dinesh\SRV\SRV\bin\System.Web.Razor.xml
+E:\Dinesh\Dinesh\SRV\SRV\bin\System.Web.Webpages.xml
+E:\Dinesh\Dinesh\SRV\SRV\bin\System.Web.Webpages.Deployment.xml
+E:\Dinesh\Dinesh\SRV\SRV\bin\System.Web.Webpages.Razor.xml
+E:\Dinesh\Dinesh\SRV\SRV\bin\System.Web.Helpers.xml
+E:\Dinesh\Dinesh\SRV\SRV\bin\System.Web.Mvc.xml
+E:\Dinesh\Dinesh\SRV\SRV\obj\Debug\SRV.csprojResolveAssemblyReference.cache
+E:\Dinesh\Dinesh\SRV\SRV\obj\Debug\SRV.dll
+E:\Dinesh\Dinesh\SRV\SRV\obj\Debug\SRV.pdb
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\ApplicationInsights.config
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\roslyn\csc.exe
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\roslyn\System.Collections.Immutable.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\roslyn\System.Reflection.Metadata.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\roslyn\vbc.exe
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\roslyn\VBCSCompiler.exe
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\roslyn\VBCSCompiler.exe.config
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\SRV.dll.config
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\SRV.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\SRV.pdb
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\Microsoft.AI.Agent.Intercept.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\Microsoft.AI.DependencyCollector.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\Microsoft.AI.Web.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\Microsoft.AI.WindowsServer.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\Microsoft.ApplicationInsights.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\Microsoft.Web.Infrastructure.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\System.Web.Helpers.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\System.Web.Mvc.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\System.Web.Razor.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\System.Web.Webpages.Deployment.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\System.Web.Webpages.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\System.Web.Webpages.Razor.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\Microsoft.AI.DependencyCollector.xml
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\Microsoft.AI.Web.xml
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\Microsoft.AI.WindowsServer.xml
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\Microsoft.ApplicationInsights.xml
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\System.Web.Razor.xml
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\System.Web.Webpages.xml
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\System.Web.Webpages.Deployment.xml
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\System.Web.Webpages.Razor.xml
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\System.Web.Helpers.xml
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\System.Web.Mvc.xml
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\obj\Debug\SRV.csprojResolveAssemblyReference.cache
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\obj\Debug\SRV.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\obj\Debug\SRV.pdb
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\ClientBLL.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\ClientDLL.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\ClientBLL.pdb
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\ClientDLL.pdb
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\HiQPdf.Free.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\HtmlAgilityPack.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\HTMLtoPDF.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\itextsharp.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\Newtonsoft.Json.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\HiQPdf.Free.xml
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\Newtonsoft.Json.xml
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\SRV\bin\HiQPdf.dep
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\SRV\bin\ApplicationInsights.config
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\SRV\bin\roslyn\csc.exe
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\SRV\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\SRV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\SRV\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\SRV\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\SRV\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\SRV\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\SRV\bin\roslyn\System.Collections.Immutable.dll
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\SRV\bin\roslyn\System.Reflection.Metadata.dll
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\SRV\bin\roslyn\vbc.exe
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\SRV\bin\roslyn\VBCSCompiler.exe
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\SRV\bin\roslyn\VBCSCompiler.exe.config
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\SRV\bin\SRV.dll.config
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\SRV\bin\SRV.dll
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\SRV\bin\SRV.pdb
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\SRV\bin\ClientBLL.dll
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\SRV\bin\ClientDLL.dll
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\SRV\bin\ClientBLL.pdb
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\SRV\bin\ClientDLL.pdb
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\SRV\obj\Debug\SRV.csprojResolveAssemblyReference.cache
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\SRV\obj\Debug\SRV.dll
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\SRV\obj\Debug\SRV.pdb
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\HiQPdf.dep
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\ClientBLL.dll
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\ClientDLL.dll
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\ClientBLL.pdb
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\ClientDLL.pdb
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\Microsoft.AI.DependencyCollector.xml
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\Microsoft.AI.Web.xml
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\Microsoft.AI.WindowsServer.xml
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\Microsoft.ApplicationInsights.xml
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\System.Web.Razor.xml
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\System.Web.Webpages.xml
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\System.Web.Webpages.Deployment.xml
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\System.Web.Webpages.Razor.xml
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\System.Web.Helpers.xml
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\System.Web.Mvc.xml
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\obj\Debug\SRV.csprojResolveAssemblyReference.cache
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\obj\Debug\SRV.dll
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\obj\Debug\SRV.pdb
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\ApplicationInsights.config
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\roslyn\csc.exe
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\roslyn\System.Collections.Immutable.dll
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\roslyn\System.Reflection.Metadata.dll
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\roslyn\vbc.exe
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\roslyn\VBCSCompiler.exe
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\roslyn\VBCSCompiler.exe.config
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\SRV.dll.config
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\SRV.dll
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\SRV\bin\SRV.pdb
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\SRV\bin\Excel.4.5.dll
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\SRV\bin\ICSharpCode.SharpZipLib.dll
+F:\pathlab\ProjectLabAll\Medical\SRVGit\SRV\obj\Debug\SRV.csprojResolveAssemblyReference.cache
+F:\pathlab\ProjectLabAll\Medical\SRVGit\SRV\obj\Debug\SRV.dll
+F:\pathlab\ProjectLabAll\Medical\SRVGit\SRV\obj\Debug\SRV.pdb
+F:\pathlab\ProjectLabAll\Medical\SRVGit\SRV\bin\ApplicationInsights.config
+F:\pathlab\ProjectLabAll\Medical\SRVGit\SRV\bin\roslyn\csc.exe
+F:\pathlab\ProjectLabAll\Medical\SRVGit\SRV\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\pathlab\ProjectLabAll\Medical\SRVGit\SRV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\pathlab\ProjectLabAll\Medical\SRVGit\SRV\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\pathlab\ProjectLabAll\Medical\SRVGit\SRV\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\pathlab\ProjectLabAll\Medical\SRVGit\SRV\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\pathlab\ProjectLabAll\Medical\SRVGit\SRV\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\pathlab\ProjectLabAll\Medical\SRVGit\SRV\bin\roslyn\System.Collections.Immutable.dll
+F:\pathlab\ProjectLabAll\Medical\SRVGit\SRV\bin\roslyn\System.Reflection.Metadata.dll
+F:\pathlab\ProjectLabAll\Medical\SRVGit\SRV\bin\roslyn\vbc.exe
+F:\pathlab\ProjectLabAll\Medical\SRVGit\SRV\bin\roslyn\VBCSCompiler.exe
+F:\pathlab\ProjectLabAll\Medical\SRVGit\SRV\bin\roslyn\VBCSCompiler.exe.config
+F:\pathlab\ProjectLabAll\Medical\SRVGit\SRV\bin\SRV.dll.config
+F:\pathlab\ProjectLabAll\Medical\SRVGit\SRV\bin\SRV.dll
+F:\pathlab\ProjectLabAll\Medical\SRVGit\SRV\bin\SRV.pdb
+F:\pathlab\ProjectLabAll\Medical\SRVGit\SRV\bin\ClientBLL.dll
+F:\pathlab\ProjectLabAll\Medical\SRVGit\SRV\bin\ClientDLL.dll
+F:\pathlab\ProjectLabAll\Medical\SRVGit\SRV\bin\HiQPdf.Free.dll
+F:\pathlab\ProjectLabAll\Medical\SRVGit\SRV\bin\ClientBLL.pdb
+F:\pathlab\ProjectLabAll\Medical\SRVGit\SRV\bin\ClientDLL.pdb
+F:\pathlab\ProjectLabAll\Medical\SRVGit\SRV\bin\HiQPdf.Free.xml
+F:\pathlab\ProjectLabAll\Medical\SRVGit\SRV\bin\HiQPdf.dep
+F:\RunningProjectSrv\Medical\SRVGit\SRV\bin\ApplicationInsights.config
+F:\RunningProjectSrv\Medical\SRVGit\SRV\bin\roslyn\csc.exe
+F:\RunningProjectSrv\Medical\SRVGit\SRV\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\RunningProjectSrv\Medical\SRVGit\SRV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\RunningProjectSrv\Medical\SRVGit\SRV\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\RunningProjectSrv\Medical\SRVGit\SRV\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\RunningProjectSrv\Medical\SRVGit\SRV\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\RunningProjectSrv\Medical\SRVGit\SRV\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\RunningProjectSrv\Medical\SRVGit\SRV\bin\roslyn\System.Collections.Immutable.dll
+F:\RunningProjectSrv\Medical\SRVGit\SRV\bin\roslyn\System.Reflection.Metadata.dll
+F:\RunningProjectSrv\Medical\SRVGit\SRV\bin\roslyn\vbc.exe
+F:\RunningProjectSrv\Medical\SRVGit\SRV\bin\roslyn\VBCSCompiler.exe
+F:\RunningProjectSrv\Medical\SRVGit\SRV\bin\roslyn\VBCSCompiler.exe.config
+F:\RunningProjectSrv\Medical\SRVGit\SRV\bin\SRV.dll.config
+F:\RunningProjectSrv\Medical\SRVGit\SRV\bin\SRV.dll
+F:\RunningProjectSrv\Medical\SRVGit\SRV\bin\SRV.pdb
+F:\RunningProjectSrv\Medical\SRVGit\SRV\bin\ClientBLL.dll
+F:\RunningProjectSrv\Medical\SRVGit\SRV\bin\ClientDLL.dll
+F:\RunningProjectSrv\Medical\SRVGit\SRV\bin\HiQPdf.Free.dll
+F:\RunningProjectSrv\Medical\SRVGit\SRV\bin\ClientBLL.pdb
+F:\RunningProjectSrv\Medical\SRVGit\SRV\bin\ClientDLL.pdb
+F:\RunningProjectSrv\Medical\SRVGit\SRV\bin\HiQPdf.Free.xml
+F:\RunningProjectSrv\Medical\SRVGit\SRV\bin\HiQPdf.dep
+F:\RunningProjectSrv\Medical\SRVGit\SRV\obj\Debug\SRV.csprojResolveAssemblyReference.cache
+F:\RunningProjectSrv\Medical\SRVGit\SRV\obj\Debug\SRV.dll
+F:\RunningProjectSrv\Medical\SRVGit\SRV\obj\Debug\SRV.pdb
+D:\Madical\Madical4\Medical\SRVGit\SRV\obj\Debug\SRV.dll
+D:\Madical\Madical4\Medical\SRVGit\SRV\obj\Debug\SRV.pdb
+D:\Madical\Madical4\Medical\SRVGit\SRV\bin\ApplicationInsights.config
+D:\Madical\Madical4\Medical\SRVGit\SRV\bin\roslyn\csc.exe
+D:\Madical\Madical4\Medical\SRVGit\SRV\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Madical\Madical4\Medical\SRVGit\SRV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Madical\Madical4\Medical\SRVGit\SRV\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Madical\Madical4\Medical\SRVGit\SRV\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Madical\Madical4\Medical\SRVGit\SRV\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Madical\Madical4\Medical\SRVGit\SRV\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Madical\Madical4\Medical\SRVGit\SRV\bin\roslyn\System.Collections.Immutable.dll
+D:\Madical\Madical4\Medical\SRVGit\SRV\bin\roslyn\System.Reflection.Metadata.dll
+D:\Madical\Madical4\Medical\SRVGit\SRV\bin\roslyn\vbc.exe
+D:\Madical\Madical4\Medical\SRVGit\SRV\bin\roslyn\VBCSCompiler.exe
+D:\Madical\Madical4\Medical\SRVGit\SRV\bin\roslyn\VBCSCompiler.exe.config
+D:\Madical\Madical4\Medical\SRVGit\SRV\bin\SRV.dll.config
+D:\Madical\Madical4\Medical\SRVGit\SRV\bin\SRV.dll
+D:\Madical\Madical4\Medical\SRVGit\SRV\bin\SRV.pdb
+D:\Madical\Madical4\Medical\SRVGit\SRV\bin\ClientBLL.dll
+D:\Madical\Madical4\Medical\SRVGit\SRV\bin\ClientDLL.dll
+D:\Madical\Madical4\Medical\SRVGit\SRV\bin\ClientBLL.pdb
+D:\Madical\Madical4\Medical\SRVGit\SRV\bin\ClientDLL.pdb
+D:\Madical\Madical4\Medical\SRVGit\SRV\bin\HiQPdf.Free.xml
+D:\Madical\Madical4\Medical\SRVGit\SRV\bin\HiQPdf.dep
+D:\Madical\Madical4\Medical\SRVGit\SRV\obj\Debug\SRV.csprojResolveAssemblyReference.cache
+E:\project\25-05-2019\SRVGit\SRV\bin\ClientBLL.dll
+E:\project\25-05-2019\SRVGit\SRV\bin\ClientDLL.dll
+E:\project\25-05-2019\SRVGit\SRV\bin\ClientBLL.pdb
+E:\project\25-05-2019\SRVGit\SRV\bin\ClientDLL.pdb
+E:\project\25-05-2019\SRVGit\SRV\obj\Debug\SRV.csprojResolveAssemblyReference.cache
+E:\project\25-05-2019\SRVGit\SRV\obj\Debug\SRV.dll
+E:\project\25-05-2019\SRVGit\SRV\obj\Debug\SRV.pdb
+E:\project\25-05-2019\SRVGit\SRV\bin\ApplicationInsights.config
+E:\project\25-05-2019\SRVGit\SRV\bin\roslyn\csc.exe
+E:\project\25-05-2019\SRVGit\SRV\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\project\25-05-2019\SRVGit\SRV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\project\25-05-2019\SRVGit\SRV\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\project\25-05-2019\SRVGit\SRV\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\project\25-05-2019\SRVGit\SRV\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\project\25-05-2019\SRVGit\SRV\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\project\25-05-2019\SRVGit\SRV\bin\roslyn\System.Collections.Immutable.dll
+E:\project\25-05-2019\SRVGit\SRV\bin\roslyn\System.Reflection.Metadata.dll
+E:\project\25-05-2019\SRVGit\SRV\bin\roslyn\vbc.exe
+E:\project\25-05-2019\SRVGit\SRV\bin\roslyn\VBCSCompiler.exe
+E:\project\25-05-2019\SRVGit\SRV\bin\roslyn\VBCSCompiler.exe.config
+E:\project\25-05-2019\SRVGit\SRV\bin\SRV.dll.config
+E:\project\25-05-2019\SRVGit\SRV\bin\SRV.dll
+E:\project\25-05-2019\SRVGit\SRV\bin\SRV.pdb
+E:\project\25-05-2019\SRVGit\SRV\bin\EntityModel.dll
+E:\project\25-05-2019\SRVGit\SRV\bin\EntityModel.pdb
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\SRV\bin\ApplicationInsights.config
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\SRV\bin\roslyn\csc.exe
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\SRV\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\SRV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\SRV\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\SRV\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\SRV\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\SRV\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\SRV\bin\roslyn\System.Collections.Immutable.dll
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\SRV\bin\roslyn\System.Reflection.Metadata.dll
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\SRV\bin\roslyn\vbc.exe
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\SRV\bin\roslyn\VBCSCompiler.exe
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\SRV\bin\roslyn\VBCSCompiler.exe.config
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\SRV\bin\SRV.dll.config
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\SRV\bin\SRV.dll
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\SRV\bin\SRV.pdb
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\SRV\bin\ClientBLL.dll
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\SRV\bin\ClientDLL.dll
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\SRV\bin\EntityModel.dll
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\SRV\bin\ClientBLL.pdb
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\SRV\bin\ClientDLL.pdb
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\SRV\bin\EntityModel.pdb
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\SRV\obj\Debug\SRV.csprojResolveAssemblyReference.cache
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\SRV\obj\Debug\SRV.dll
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\SRV\obj\Debug\SRV.pdb

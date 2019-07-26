@@ -1,0 +1,134 @@
+﻿@{
+    ViewBag.Title = "Items";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table>
+    <tr>
+        <td>
+            @*<form class="form-inline mt-2 mt-md-0">*@
+            <input class="form-control mr-sm-2" type="text" id="ItemSearch" onkeyup="SearchItems()" placeholder="Search String" aria-label="Search">
+            @*</form>*@
+        </td>
+    </tr>
+</table>
+<div style="max-height : 250px; overflow : auto;">
+    <table class="table" id="dvItems"></table>
+</div>
+
+<style>
+    #ItemSearch {
+        background-image: url('/css/searchicon.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+    }
+
+    #myTable {
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid #ddd;
+        font-size: 18px;
+    }
+
+        #myTable th, #myTable td {
+            text-align: left;
+            padding: 12px;
+        }
+
+        #myTable tr {
+            border-bottom: 1px solid #ddd;
+        }
+
+            #myTable tr.header, #myTable tr:hover {
+                background-color: #f1f1f1;
+            }
+
+    table#dvItems {
+        border-collapse: collapse;
+        text-align: -webkit-left;
+    }
+
+    #dvItems tr {
+        background-color: #eee;
+        border-top: 1px solid #fff;
+    }
+
+        #dvItems tr:hover {
+            background-color: #ccc;
+        }
+
+    #dvItems th, #example td {
+        padding: 3px 5px;
+    }
+
+    #dvItems td:hover {
+        cursor: pointer;
+    }
+</style>
+<script>
+    function SearchItems() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("ItemSearch");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("dvItems");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+    $(document).ready(function () {
+        GetItems();
+    });
+    function Get_ItemCode(code) {
+        alert(code);
+    }
+
+    function GetItems() {
+        var ItemDtls = "";
+        var Urls = "../IteamMaster/GetItems";
+        //var Urls = window.location.pathname + "/Proteus/GetLoginDetails";
+        var data = JSON.stringify({});
+        $.ajax({
+            url: Urls,
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            data: data, // pass that text to the server as a correct JSON String
+            success: function (resp) {
+                // var JString = resp.data;
+                var JString = resp
+                dsnew = JSON.parse(JString);
+
+                if (dsnew && dsnew != 'null') {
+                    ItemDtls = "<thead class='thead-dark'>" +
+                           "<tr><th scope='col'>Name</th>" +
+                            "<th scope='col'>HSN Code</th>" +
+                            "<th scope='col'>Pack</th>" +
+                            "<th scope='col'>Company</th>" +
+                            "<th scope='col'>Qty.</th></tr></thead><tbody>"
+                    for (var i = 0; i <= dsnew.Table.length - 1; i++) {
+                        ItemDtls += "<tr onclick='Get_ItemCode(" + dsnew.Table[i].code + ");'><td>" + dsnew.Table[i].Name + "</td><td>" + dsnew.Table[i].HSNCode + "</td><td>" + dsnew.Table[i].pack + "</td><td>" + dsnew.Table[i].compname + "</td><td>" + dsnew.Table[i].clqty + "</td></tr>"
+                    }
+                    ItemDtls += "</tbody>";
+                }
+                $("#dvItems").html(ItemDtls);
+            },
+            //error: function (xhr, ajaxOptions, thrownError) {
+            //}
+        });
+
+    }
+</script>   

@@ -1,0 +1,283 @@
+﻿
+@{
+    ViewBag.Title = "Company";
+    Layout = "~/Views/Shared/navigation.cshtml";
+}
+
+<head>
+    <link href="~/css/itemmaster.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+    <h3 class="h1">-: COMPANY :- </h3>
+    <div class="signup-form">
+        <form method="post">
+            <div class="row">
+                <div class="col-md-3" style="border: 2px solid #777; padding:10px;">
+                    <div class="row" style="border-bottom:1px solid #777;">
+                        <label class="col-md-10 control-label"> Location: </label>
+                        <br />
+                        <br />
+                    </div>
+                    
+                    <div class="row" style="border-bottom:1px solid #777;">
+                        <label class="col-md-5"> Short Name :  </label>
+                        <text class="col-md-2">   </text>
+                        
+                        <label class="col-md-7"> Ater Code :</label>
+                        <text class="col-md-2">   </text>
+                        <br />
+                    </div>
+                   
+                    <br>
+
+                    <div class="row" style="border-bottom:1px solid #777;">
+                        <label class="col-md-5"> Expiry :  </label>
+                        <text class="col-md-2">   </text>
+
+                        <label class="col-md-7"> Genetics :</label>
+                        <text class="col-md-2">   </text>
+                        <label class="col-md-7"> D(irect)/I(ndirect) :</label>
+                        <text class="col-md-2">   </text>
+                        <label class="col-md-7"> SC After Discount :</label>
+                        <text class="col-md-2">   </text>
+                        <br />
+                    </div>
+
+                    <br>
+                    <div class="row" style="border-bottom:1px solid #777;">
+                        <label class="col-md-6"> Add Sucharge :  </label>
+                        <text class="col-md-2">   </text>
+
+                        <label class="col-md-7"> Inv Print Order :</label>
+                        <text class="col-md-2">   </text>
+                        <label class="col-md-7"> VAT :</label>
+                        <text class="col-md-2">   </text>
+                        <label class="col-md-7"> Inclusive :</label>
+                        <text class="col-md-2">   </text>
+                        <label class="col-md-7"> Sale Dis. on T.Rate</label>
+                        <text class="col-md-2">   </text>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <label class="col-md-6">Center Code  </label>
+                        <text class="col-md-2">   </text>
+
+                        <label class="col-md-7">Dis On Sale % :</label>
+                        <text class="col-md-2">   </text>
+                        <br />
+                        <br />
+                       
+                    </div>
+
+                    <br />
+                    <div class="row" style="border-bottom:1px solid #777;">
+                        <label class="col-md-7">Status :</label>
+                        <text class="col-md-2">   </text>
+                        <br />
+                        <br />
+                       
+                        <br />
+                        <br />
+                    </div>
+
+                </div>
+
+                
+                <div class="col-md-7" style="border: 2px solid #777; padding:10px;">
+                    <table>
+                        <tr>
+                            <td>
+                                <input class="form-control mr-sm-2" type="text" id="CompanySearch" onkeyup="SearchCompanys()" placeholder="Search String" aria-label="Search">
+                                @*</form>*@
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="max-height : 334px; overflow : auto;">
+                        <table class="table" id="dvCompanys"></table>
+                    </div>
+
+
+                    <script>
+    function SearchCompanys() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("CompanySearch");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("dvCompanys");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+    $(document).ready(function () {
+        GetCompanys();
+    });
+    function Get_CompanyCode(code) {
+        alert(code);
+    }
+
+    function GetCompanys() {
+        var CompanyDtls = "";
+        var Urls = "../CompanyMaster/GetCompanys";
+        //var Urls = window.location.pathname + "/Proteus/GetLoginDetails";
+        var data = JSON.stringify({});
+        $.ajax({
+            url: Urls,
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            data: data, // pass that text to the server as a correct JSON String
+            success: function (resp) {
+                // var JString = resp.data;
+                var JString = resp
+                dsnew = JSON.parse(JString);
+
+                if (dsnew && dsnew != 'null') {
+                    CompanyDtls = "<thead class='thead-dark'>" +
+                           "<tr><th scope='col'>Name</th>" +
+                            "<th scope='col'>Shortname</th>" +
+                            "</tr></thead><tbody>"
+                    for (var i = 0; i <= dsnew.Table.length - 1; i++) {
+                        CompanyDtls += "<tr onclick='Get_CompanyCode(" + dsnew.Table[i].Name + ");'><td>" + dsnew.Table[i].Name + "</td><td>" + dsnew.Table[i].Shortname + "</td></tr>"
+                    }
+                    CompanyDtls += "</tbody>";
+                }
+                $("#dvCompanys").html(CompanyDtls);
+            },
+            //error: function (xhr, ajaxOptions, thrownError) {
+            //}
+        });
+
+    }
+                    </script>
+                    <br />
+                    <br />
+                    <div class="col-md-12" style="padding:10px;">
+                        <div class="row" style="border-top:1px solid #777; ">
+                            
+                            <label class="col-md-2"> Address:</label>
+                            <text class="col-md-5"></text>
+
+                            <br />
+                            <br />
+                        </div>
+                    </div>
+                   
+                    <div class="col-md-12" style="padding:10px;">
+                        <div class="row" style="border-top:1px solid #777; ">
+                            <label class="col-md-2"> Telli : </label>
+                            <text class="col-lg-offset-10"></text>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+
+                            <label class="col-md-2"> E Mail:</label>
+                            <text class="col-lg-offset-10"></text>
+
+
+                        </div>
+                    </div>
+                   
+                    <div class="col-md-6" style="padding:10px;">
+                        <div class="row" style="border-top:1px solid #777; ;">
+                            <label class="col-md-5"> Contact 1:</label>
+                            <text class="col-md-7"></text>
+                            <br>
+                            <br>
+                            <br>
+                            
+                            
+                            <label class="col-md-5"> Contact 2:</label>
+                            <text class="col-md-7"></text>
+
+
+                        </div>
+
+
+                    </div>
+                    <br />
+                    
+                    <div class="col-md-6" style="padding:10px;">
+                        <div class="row" style="border-top:1px solid #777; ;">
+                            <label class="col-md-5"> Mobile 1:</label>
+                            <text class="col-md-7"></text>
+                            <br>
+                            <br>
+                            <br>
+                            
+
+                            <label class="col-md-5"> Mobile 2:</label>
+                            <text class="col-md-7"></text>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-2" style="border: 2px solid #777;">
+                    <div class="row">
+                        <button style="padding:6px;" class="col-md-12"> New(F9) </button>
+                        <button  style="padding:6px;"class="col-md-12"> Edit(F3)</button>
+                        <button style="padding:6px;" class="col-md-12"> Delete </button>
+                        <button style="padding:6px;" class="col-md-12"> Exit</button>
+                        <button style="padding:6px;" class="col-md-12"> Supllier List (F4)</button>
+                        <button  style="padding:6px;"class="col-md-12"> Delete With Item (F10)</button>
+
+                        <label class="col-md-12"> </label>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+
+                        <button style="padding:6px;" class="col-md-12"> Staff Details</button>
+                        <button style="padding:6px;" class="col-md-12"> Notebook</button>
+                        
+                        <label class="col-md-12"> </label>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <label class="col-md-12">Search By </label>
+                        <button style="padding:6px;" class="col-md-12"> 1. Split Name</button>
+                        <button style="padding:6px;" class="col-md-12"> 2. Alter Code</button>
+                        <button style="padding:6px;"  class="col-md-12"> 3.Mobile</button>
+                        <button style="padding:6px;" class="col-md-12"> 4.Telephone</button>
+                        <button style="padding:6px;" class="col-md-12">5. Address</button>
+                        
+                    </div>
+
+                </div>
+                </div>
+
+</form>
+        </div>
+    </body>

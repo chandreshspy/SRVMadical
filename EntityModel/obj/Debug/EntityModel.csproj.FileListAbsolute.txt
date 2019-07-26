@@ -1,0 +1,10 @@
+E:\project\25-05-2019\SRVGit\EntityModel\bin\Debug\EntityModel.dll
+E:\project\25-05-2019\SRVGit\EntityModel\bin\Debug\EntityModel.pdb
+E:\project\25-05-2019\SRVGit\EntityModel\obj\Debug\EntityModel.dll
+E:\project\25-05-2019\SRVGit\EntityModel\obj\Debug\EntityModel.pdb
+E:\project\25-05-2019\SRVGit\EntityModel\obj\Debug\EntityModel.csprojResolveAssemblyReference.cache
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\EntityModel\bin\Debug\EntityModel.dll
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\EntityModel\bin\Debug\EntityModel.pdb
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\EntityModel\obj\Debug\EntityModel.csprojResolveAssemblyReference.cache
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\EntityModel\obj\Debug\EntityModel.dll
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\EntityModel\obj\Debug\EntityModel.pdb

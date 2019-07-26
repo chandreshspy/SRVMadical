@@ -1,0 +1,268 @@
+﻿
+@{
+    ViewBag.Title = "Doctor";
+    Layout = "~/Views/Shared/navigation.cshtml";
+}
+
+<head>
+    <link href="~/css/itemmaster.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+    <h3 class="h1">-: DOCTOR :- </h3>
+    <div class="signup-form">
+        <form method="post">
+            <div class="row">
+                <div class="col-md-3" style="border: 2px solid #777; padding:10px;">
+                    <div class="row" style="border-bottom:1px solid #777;">
+                        <label class="col-md-10 control-label"> Code: </label>
+                        <br />
+                        <br />
+                    </div>
+
+                    <div class="row" style="border-bottom:1px solid #777;">
+                        <h4 style="margin-left: 34%;font-size: 14px; font-weight: 900; color:green;" > Qualification  </h4>
+                        <text class="col-md-2">   </text>
+                        <br />
+                        <br />
+                        <br />
+                        
+                        <br />
+                    </div>
+
+                    <br>
+
+                    <div class="row" style="border-bottom:1px solid #777;">
+                        <h4 style="margin-left: 34%;font-size: 14px; font-weight: 900; color:green;"> Speciallity  </h4>
+                        <text class="col-md-2">   </text>
+                        <br />
+                        <br />
+                        <br />
+
+                        <br />
+                    </div>
+
+                    <br>
+                    <div class="row" style="border-bottom:1px solid #777;">
+                        <h4 style="margin-left: 34%;font-size: 14px; font-weight: 900; color:green;"> Registration No.  </h4>
+                        <text class="col-md-2">   </text>
+                        <br />
+                        <br />
+                        <br />
+
+                        <br />
+                    </div>
+
+                    <br />
+                    <div class="row" style="border-bottom:1px solid #777;">
+                        <label class="col-md-7">Discount(%) :</label>
+                        <text class="col-md-2">   </text>
+                        <br />
+                        <br />
+
+                        <br />
+                        <br />
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="row" style=" border-top:1px solid #777; " >
+                        <label class="col-md-7">Status :</label>
+                        <text class="col-md-2">   </text>
+                        <br />
+                        <br />
+
+                        
+                    </div>
+
+                </div>
+                <div class="col-md-7" style="border: 2px solid #777; padding:10px;">
+                    <table>
+                        <tr>
+                            <td>
+                                <input class="form-control mr-sm-2" type="text" id="CompanySearch" onkeyup="SearchCompanys()" placeholder="Search String" aria-label="Search">
+                                @*</form>*@
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="max-height : 334px; overflow : auto;">
+                        <table class="table" id="dvCompanys"></table>
+                    </div>
+
+
+                    <script>
+    function SearchCompanys() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("CompanySearch");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("dvCompanys");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+    $(document).ready(function () {
+        GetCompanys();
+    });
+    function Get_CompanyCode(code) {
+        alert(code);
+    }
+
+    function GetCompanys() {
+        var CompanyDtls = "";
+        var Urls = "../CompanyMaster/GetCompanys";
+        //var Urls = window.location.pathname + "/Proteus/GetLoginDetails";
+        var data = JSON.stringify({});
+        $.ajax({
+            url: Urls,
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            data: data, // pass that text to the server as a correct JSON String
+            success: function (resp) {
+                // var JString = resp.data;
+                var JString = resp
+                dsnew = JSON.parse(JString);
+
+                if (dsnew && dsnew != 'null') {
+                    CompanyDtls = "<thead class='thead-dark'>" +
+                           "<tr><th scope='col'>Name</th>" +
+                            "<th scope='col'>Shortname</th>" +
+                            "</tr></thead><tbody>"
+                    for (var i = 0; i <= dsnew.Table.length - 1; i++) {
+                        CompanyDtls += "<tr onclick='Get_CompanyCode(" + dsnew.Table[i].Name + ");'><td>" + dsnew.Table[i].Name + "</td><td>" + dsnew.Table[i].Shortname + "</td></tr>"
+                    }
+                    CompanyDtls += "</tbody>";
+                }
+                $("#dvCompanys").html(CompanyDtls);
+            },
+            //error: function (xhr, ajaxOptions, thrownError) {
+            //}
+        });
+
+    }
+                    </script>
+                    <br />
+                    <br />
+                    <div class="col-md-12" style="padding:10px;">
+                        <div class="row" style="border-top:1px solid #777; ">
+
+                            <label class="col-md-4"> Clinic Address:</label>
+                            <text class="col-md-5"></text>
+
+                            <br />
+                            <br />
+                            <br />
+                            <label class="col-md-5"> Telephone:</label>
+                            <text class="col-md-5"></text>
+
+                            <br />
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-md-12" style="padding:10px;">
+                        <div class="row" style="border-top:1px solid #777; ">
+
+                            <label class="col-md-4"> Resi. Address:</label>
+                            <text class="col-md-5"></text>
+
+                            <br />
+                            <br />
+                            <br />
+                            <label class="col-md-5"> Telephone:</label>
+                            <text class="col-md-5"></text>
+
+                            <br />
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-12" style="padding:10px;">
+                        <div class="row" style="border-top:1px solid #777; ">
+
+                            <label class="col-md-4"> Mobile:</label>
+                            <text class="col-md-5"></text>
+
+                            <br />
+                            <br />
+                            <br />
+                            <label class="col-md-5"> E-mail:</label>
+                            <text class="col-md-5" id="txtemail"></text>
+
+                            <br />
+
+                        </div>
+                    </div>
+                    <br />
+
+                </div>
+                <div class="col-md-2" style="border: 2px solid #777;">
+                    <div class="row">
+                        <button style="padding:6px;" class="col-md-12"> New(F9) </button>
+                        <button style="padding:6px;" class="col-md-12"> Edit(F3)</button>
+                        <button style="padding:6px;" class="col-md-12"> Delete </button>
+                        <button style="padding:6px;" class="col-md-12"> Exit</button>
+                        
+                        <button style="padding:6px;" class="col-md-12"> Notebook</button>
+
+                        <label class="col-md-12"> </label>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <label class="col-md-12">Search By </label>
+                        <button style="padding:6px;" class="col-md-12"> 1. Split Name</button>
+                        <button style="padding:6px;" class="col-md-12"> 2. Alter Code</button>
+                        <button style="padding:6px;" class="col-md-12"> 3.Mobile</button>
+                        <button style="padding:6px;" class="col-md-12"> 4.Telephone</button>
+                        <button style="padding:6px;" class="col-md-12">5. Address</button>
+                        <button style="padding:6px;" class="col-md-12">6. Speciallity</button>
+
+                    </div>
+
+                </div>
+
+
+
+
+                </div>
+            </form>
+        </div>
+    </body>

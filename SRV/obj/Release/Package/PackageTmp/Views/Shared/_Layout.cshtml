@@ -1,0 +1,402 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SRV Path Lab Pvt. Ltd</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="~/css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="~/css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="~/css/bootstrap.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="~/css/magnific-popup.css">
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="~/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/css/owl.theme.default.min.css">
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="~/css/flexslider.css">
+    <!-- Flaticons  -->
+    <link rel="stylesheet" href="~/fonts/flaticon/font/flaticon.css">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="~/css/style.css">
+    <!-- Modernizr JS -->
+    <script src="~/js/modernizr-2.6.2.min.js"></script>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/scripts/jquery-1.10.2.js"></script>
+    <link href="~/css/customstyle.css" rel="stylesheet" />
+    <style>
+        a {
+            text-decoration: none !important;
+        }
+    </style>
+
+</head>
+<body>
+
+    @*<div class="colorlib-loader"></div>*@
+
+    <div class="col-md-12" style="padding:0">
+        <div id="ticker" class="col-md-9" style="background-color: #3c97e8;padding:0;margin-top:1px;border-radius:2px;min-height:50px;">
+            @*<marquee style="margin-top:1.4%"> Customer Care Number:- +91-9310740740 Emergency  Contact:- +91 913 678 2323,+91 845 974 7454 Email:-info@srvpathlabs.com Website:-www.srvpathlab.com</marquee>*@
+        </div>
+        @*<div id="ticker">
+
+            </div>*@
+
+        <div class="col-md-3" style="padding:0">
+            <nav class="navbar navbar-default sidebar" role="navigation" style="background-color:#69cb6a;margin-bottom:0!important;">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a style="color: white;font-size: 16px;" href="#" onclick="showhide()"><strong>Login</strong><span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a>
+                                <ul class="dropdown-menu forAnimate" style="margin-left: -28%;display:none;" id="logmn">
+                                    <li><a style="color: black;" href="http://srv.srvpathlab.com/clientlogin.aspx?onlinepatient=true" target="_blank">Online Patient Report</a></li>
+                                    <li><a style="color: black;" href="http://srv.srvpathlab.com/doctorlogin.aspx" target="_blank">Doctor Login</a></li>
+                                    <li><a style="color: black;" href="http://srv.srvpathlab.com/login.aspx" target="_blank">Franchise Login</a></li>
+                                    <li><a style="color: black;" href="http://srvpathlab.com/adminHome/login" target="_blank">Admin Login</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" style="color: white;font-size:16px;" onclick="oldShowhide()"><strong>Old Login</strong><span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a>
+                                <ul class="dropdown-menu forAnimate" style="margin-left: -28%;display:none" id="oldlogmn">
+                                    <li><a style="color: black;" href="http://labsrv.indiciumcrm.com/clientlogin.aspx?onlinepatient=true" target="_blank">Online Patient Report</a></li>
+                                    <li><a style="color: black;" href="http://labsrv.indiciumcrm.com/doctorlogin.aspx" target="_blank">Doctor Login</a></li>
+                                    <li><a style="color: black;" href="http://labsrv.indiciumcrm.com/login.aspx" target="_blank">Franchise Login</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div id="page">
+     <nav class="colorlib-nav" role="navigation">
+            <div class="top-menu" style="padding:0;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="top">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div id="colorlib-logo">
+                                            <a href="~/Home">
+                                                <i></i>
+                                                <img style="width: 67%;margin-left: -11%;" src="~/Content/logo/logo.png" />
+                                                @*Medi<span>care</span>*@
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="num">
+                                            @*<span class="icon"><i class="icon-phone"></i></span>*@
+                                            @*<p><a href="#">+91 913 678 2323</a><br><a href="#">+91 845 974 7454</a><br><a href="#">info@srvpathlabs.com</a></p>*@
+                                        </div>
+                                    </div>
+                                    @*<div class="col-md-3">
+                                            <div class="loc">
+                                                <span class="icon"><i class="icon-location"></i></span>
+                                                <p><a href="#">A-218, Street No. 8A, 4 ½ Pusta,Delhi-110053</a></p>
+                                            </div>
+                                        </div>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-wrap">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="menu-1">
+                                    <ul>
+                                        <li class="active" id="Home">
+                                            <a href="~/Home">Home</a>
+                                        </li>
+                                        <li class="has-dropdown" id="About">
+                                            <b><a href="~/Aboutus">About US</a></b>
+                                            <ul class="dropdown">
+                                                <li><a href="~/Aboutus/VisionAndMission">Vision And Mission</a></li>
+                                                <li><a href="~/Aboutus/CoreValues">Core Values</a></li>
+                                                <li><a href="~/Aboutus/Focus">Focus</a></li>
+                                                <li><a href="~/Aboutus/CorporateSocialResponsibility">Corporate Social Responsibility</a></li>
+                                                <li><a href="~/Aboutus/StrategicPartnerships">Strategic Partnerships</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-dropdown" id="Team">
+                                            <b><a href="#">Team</a></b>
+                                            <ul class="dropdown">
+                                                <li><a href="~/Team/Management">Management</a></li>
+                                                <li><a href="~/Team/TechnicalAdvisors">Technical Advisors</a></li>
+                                                <li><a href="~/Team/TechnicalTeam">Technical Team</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-dropdown" id="INFRASTRUCTURE">
+                                            <b><a href="~/Infrastructure">INFRASTRUCTURE</a></b>
+                                            <ul class="dropdown">
+                                                <li><a href="~/INFRASTRUCTURE/Facilities">Facilities</a></li>
+                                                <li><a href="~/INFRASTRUCTURE/Instrumentation">Instrumentation</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-dropdown" id="Quality">
+                                            <b><a href="#">Quality</a></b>
+                                            <ul class="dropdown">
+                                                <li><a href="~/Quality/QualityPolicy">Quality Policy</a></li>
+                                                <li><a href="~/Quality/QualityControl">Quality Control</a></li>
+                                                <li><a href="~/Quality/ProficiencyProgram">Proficiency Program</a></li>
+                                                <li><a href="~/Quality/Accreditations">Accreditations</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-dropdown" id="Presence">
+                                            <b> <a href="#">Our Presence</a></b>
+                                            <ul class="dropdown">
+                                                <li><a href="~/OurPresence/CentralLab">Central Lab</a></li>
+                                                <li><a href="~/OurPresence/CollectionCenterNetwork">Collection Center Network</a></li>
+                                                <li><a href="~/OurPresence/CorporateClients">Corporate Clients</a></li>
+                                                <li><a href="~/OurPresence/Branches">Branches</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-dropdown" id="Opportunities">
+                                            <b> <a href="#">Opportunities</a></b>
+                                            <ul class="dropdown">
+                                                <li><a href="~/Opportunities/CareersOpportunities">Careers</a></li>
+                                                <li><a href="~/Opportunities/BusinessOpportunities">Business</a></li>
+                                            </ul>
+                                        </li>
+                                        <li id="Contact">
+                                            <b><a href="~/ContactUs">Contact</a></b>
+                                        </li>
+
+                                        <li class="has-dropdown" id="Login">
+                                            <b> <a href="#">Login</a></b>
+                                            <ul class="dropdown">
+                                                <li><a href="http://srv.srvpathlab.com/clientlogin.aspx?onlinepatient=true" target="_blank">Online Patient Report</a></li>
+                                                <li><a href="http://srv.srvpathlab.com/doctorlogin.aspx" target="_blank">Doctor Login</a></li>
+                                                <li><a href="http://srv.srvpathlab.com/login.aspx" target="_blank">Franchise Login</a></li>
+                                                @*</ul>
+                                                    <ul class="dropdown-menu forAnimate" style="margin-left: -28%" id="oldlogmn">*@
+                                                <li><a href="http://labsrv.indiciumcrm.com/clientlogin.aspx?onlinepatient=true" target="_blank">Old Online Patient Report</a></li>
+                                                <li><a href="http://labsrv.indiciumcrm.com/doctorlogin.aspx" target="_blank">Old Doctor Login</a></li>
+                                                <li><a href="http://labsrv.indiciumcrm.com/login.aspx" target="_blank">Old Franchise Login</a></li>
+                                            </ul>
+                                        </li>
+                                        @*<li class="has-dropdown">
+                                                 <a href="#">Doctors</a>
+                                                 <ul class="dropdown">
+                                                     <li><a href="~/Doctor">Single Doctor</a></li>
+                                                     <li><a href="~/Doctor/Doctors">All Doctor</a></li>
+                                                 </ul>
+                                             </li>
+                                             <li class="has-dropdown">
+                                                 <a href="#">Tests</a>
+                                                 <ul class="dropdown">
+                                                     <li><a href="~/Test">Health Packeges</a></li>
+                                                     <li><a href="~/Test/Tests">All Test</a></li>
+                                                 </ul>
+                                             </li>
+                                             <li><a href="~/Service">Services</a></li>
+                                            <li class="has-dropdown">
+                                                     <a href="departments.html">Departments</a>
+                                                     <ul class="dropdown">
+                                                         <li><a href="departments-single.html">Plasetic Surgery Department</a></li>
+                                                         <li><a href="departments-single.html">Dental Department</a></li>
+                                                         <li><a href="departments-single.html">Psychological Department</a></li>
+                                                     </ul>
+                                                 </li>
+                                             <li class="has-dropdown">
+                                                 <a href="#">Blog</a>
+                                                 <ul class="dropdown">
+                                                     <li><a href="~/Blog">All Blog</a></li>
+                                                     <li><a href="~/Blog/SingleBlog">Single Blog</a></li>
+                                                 </ul>
+                                             </li>*@
+
+                                    </ul>
+                                </div>
+                            </div>
+                            @*<div class="col-md-3">
+                                    <p class="btn-cta"><a href="appointment.html"><span>Make an Appointment <i class="icon-calendar3"></i></span></a></p>
+                                </div>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+     @RenderBody()
+
+        <footer id="colorlib-footer" role="contentinfo">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row row-pb-md">
+                    <div class="col-md-3 colorlib-widget">
+                        <h3>Medicare</h3>
+                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    </div>
+                    <div class="col-md-3 col-md-push-1 colorlib-widget">
+                        <h3>Navigation</h3>
+                        <ul class="colorlib-footer-links">
+                            <li><a href="#"><i class="icon-check"></i> Department</a></li>
+                            <li><a href="#"><i class="icon-check"></i> Blog</a></li>
+                            <li><a href="#"><i class="icon-check"></i> Contact</a></li>
+                            <li><a href="#"><i class="icon-check"></i> Terms</a></li>
+                            <li><a href="#"><i class="icon-check"></i> Shop</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 colorlib-widget">
+                        <h3>Our Services</h3>
+                        <ul class="colorlib-footer-links">
+                            <li><a href="#"><i class="icon-check"></i> Heart Surgery</a></li>
+                            <li><a href="#"><i class="icon-check"></i> Surgical Treatment</a></li>
+                            <li><a href="#"><i class="icon-check"></i> General Treatment</a></li>
+                            <li><a href="#"><i class="icon-check"></i> Medical Treatment</a></li>
+                            <li><a href="#"><i class="icon-check"></i> Help Desk</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 colorlib-widget">
+                        <h3>Make an Appointment</h3>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="sr-only">Name</label>
+                                <input type="name" class="form-control" id="name" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="sr-only">Message</label>
+                                <textarea class="form-control" id="message" rows="3" placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" id="btn-submit" class="btn btn-primary btn-send-message btn-md" value="Send Message">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row copyright">
+                <div class="col-md-12 text-center">
+                    <p>
+                        <small class="block">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="#" target="_blank">Colorlib</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </small>
+                        <small class="block">Demo Images: <a href="#" target="_blank">Unsplash</a> , <a href="#" target="_blank">Pexels</a></small>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+    </div>
+
+    <!-- jQuery -->
+    <script src="~/js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="~/js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="~/js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="~/js/jquery.waypoints.min.js"></script>
+    <!-- Stellar Parallax -->
+    <script src="~/js/jquery.stellar.min.js"></script>
+    <!-- Carousel -->
+    <script src="~/js/owl.carousel.min.js"></script>
+    <!-- Flexslider -->
+    <script src="~/js/jquery.flexslider-min.js"></script>
+    <!-- countTo -->
+    <script src="~/js/jquery.countTo.js"></script>
+    <!-- Magnific Popup -->
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/js/magnific-popup-options.js"></script>
+    <!-- Sticky Kit -->
+    <script src="~/js/sticky-kit.min.js"></script>
+    <!-- Main -->
+    <script src="~/js/main.js"></script>
+
+</body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+        });
+    });
+    function showhide() {
+        if ($('#logmn').is(':hidden')) {
+            $('#logmn').show();
+            $('#oldlogmn').hide();
+        } else {
+            $('#logmn').hide();
+            $('#oldlogmn').hide();
+        }
+
+    }
+    function oldShowhide() {
+        if ($('#oldlogmn').is(':hidden')) {
+            $('#oldlogmn').show();
+            $('#logmn').hide();
+        } else {
+            $('#oldlogmn').hide();
+            $('#logmn').hide();
+        }
+    }
+    var tWidth = '1050px'; // width (in pixels)
+    var tHeight = '50px'; // height (in pixels)
+    var tcolour = '#3c97e8'; // background colour:
+    var moStop = true; // pause on mouseover (true or false)
+    var fontfamily = 'arial,sans-serif'; // font for content
+    var tSpeed = 3; // scroll speed (1 = slow, 5 = fast)
+    // enter your ticker content here (use \/ and \' in place of / and ' respectively)
+    var content = 'Customer Care Number:- +91-9310740740 Emergency  Contact:- +91 913 678 2323,+91 845 974 7454 Email:-info@srvpathlabs.com Website:-www.srvpathlab.com';
+
+    var cps = -tSpeed;
+    var aw, mq;
+    var fsz = parseInt(tHeight) - 4;
+
+    function scrollticker() {
+        mq.style.left = (parseInt(mq.style.left) > (-10 - aw)) ? mq.style.left = parseInt(mq.style.left) + cps + "px" : parseInt(tWidth) + 8 + "px";
+    }
+
+    function startticker() {
+        if (document.getElementById) {
+            var tick = '<div style="position:relative;height:' + tHeight + ';overflow:hidden;background-color:' + tcolour + '"';
+            if (moStop) tick += ' onmouseover="cps=0" onmouseout="cps=-tSpeed"';
+            tick += '><strong><div id="mq" style="position:absolute;right:0px;top:0px;font-family;color: white;front-size-11;' + fontfamily + ';font-size:16px;white-space:nowrap;margin-top:1.4%;"><\/div></strong><\/div>';
+            document.getElementById('ticker').innerHTML = tick;
+            mq = document.getElementById("mq");
+            mq.style.right = (10 + parseInt(tWidth)) + "px";
+            mq.innerHTML = '<span id="tx">' + content + '<\/span>';
+            aw = document.getElementById("tx").offsetWidth;
+            lefttime = setInterval(scrollticker, 100);
+        }
+    }
+    startticker();
+    window.onload = startticker;
+</script>

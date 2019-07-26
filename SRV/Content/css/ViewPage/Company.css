@@ -1,0 +1,52 @@
+﻿    #CompanySearch {
+        background-image: url('/css/searchicon.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+    }
+
+    #myTable {
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid #ddd;
+        font-size: 18px;
+    }
+
+        #myTable th, #myTable td {
+            text-align: left;
+            padding: 12px;
+        }
+
+        #myTable tr {
+            border-bottom: 1px solid #ddd;
+        }
+
+            #myTable tr.header, #myTable tr:hover {
+                background-color: #f1f1f1;
+            }
+
+    table#dvCompanys {
+        border-collapse: collapse;
+        text-align: -webkit-left;
+    }
+
+    #dvCompanys tr {
+        background-color: #eee;
+        border-top: 1px solid #fff;
+    }
+
+        #dvCompanys tr:hover {
+            background-color: #ccc;
+        }
+
+    #dvCompanys th, #example td {
+        padding: 3px 5px;
+    }
+
+    #dvCompanys td:hover {
+        cursor: pointer;
+    }

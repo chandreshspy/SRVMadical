@@ -1,0 +1,351 @@
+﻿
+@{
+    ViewBag.Title = "Customer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <title>Bootstrap Simple Registration Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        body {
+            color: #fff;
+            background: #63738a;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .form-control {
+            height: 22px;
+            box-shadow: none;
+            color: #969fa4;
+            border: 2px solid #ccc;
+            padding: 0px 0px;
+        }
+
+            .form-control:focus {
+                border-color: #5cb85c;
+            }
+
+        .form-control, .btn {
+            border-radius: 3px;
+        }
+
+        .signup-form {
+            width: 100%;
+            margin: 0 auto;
+            padding: 30px 0;
+        }
+
+            .signup-form h2 {
+                color: #636363;
+                margin: 0 0 15px;
+                position: relative;
+                text-align: center;
+            }
+
+                .signup-form h2:before, .signup-form h2:after {
+                    content: "";
+                    height: 2px;
+                    width: 30%;
+                    background: #d4d4d4;
+                    position: absolute;
+                    top: 50%;
+                    z-index: 2;
+                }
+
+                .signup-form h2:before {
+                    left: 0;
+                }
+
+                .signup-form h2:after {
+                    right: 0;
+                }
+
+            .signup-form .hint-text {
+                color: #999;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+
+            .signup-form form {
+                color: #999;
+                border-radius: 3px;
+                margin-bottom: 15px;
+                background: #f2f3f7;
+                box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+                padding: 30px;
+                max-height: 525px;
+                /* height: 525px; */
+                min-height: 825px;
+            }
+
+            .signup-form input[type="checkbox"] {
+                margin-top: 3px;
+            }
+
+            .signup-form .btn {
+                font-size: 16px;
+                font-weight: bold;
+                min-width: 140px;
+                outline: none !important;
+            }
+
+            .signup-form .row div:first-child {
+                padding-right: 10px;
+                margin-bottom: 6px;
+            }
+
+            .signup-form .row div:last-child {
+                padding-left: 10px;
+                margin-bottom: 6px;
+            }
+
+            .signup-form a {
+                color: #fff;
+                text-decoration: underline;
+            }
+
+                .signup-form a:hover {
+                    text-decoration: none;
+                }
+
+            .signup-form form a {
+                color: #5cb85c;
+                text-decoration: none;
+            }
+
+                .signup-form form a:hover {
+                    text-decoration: underline;
+                }
+    </style>
+</head>
+
+    <div class="signup-form">
+        <form method="post">
+
+
+            <div class="col-md-12" style="border: 2px solid #777;">
+                <div class="row">
+                    <label class="col-md-1 control-label">Name :</label>
+                    <div class="col-md-5 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <label class="col-md-1 control-label">Mobile(1):</label>
+                    <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <label class="col-md-1 control-label">Mobile(2):</label>
+                    <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                </div>
+                <div class="row">
+                    <label class="col-md-2 control-label">Alter Code:</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <label class="col-md-2 control-label">T(ax)/R(etail) Inv:</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" value="R" required="required"></div>
+                    <label class="col-md-1 control-label">Teliphone:</label>
+                    <div class="col-md-5 inputGroupContainer"><input type="text" class="form-control" name="Name" value="" required="required"></div>
+                </div>
+                <div class="row">
+                    <label class="col-md-1 control-label">Addrss 1:</label>
+                    <div class="col-md-5 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <label class="col-md-1 control-label">Resi:</label>
+                    <div class="col-md-5 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                </div>
+                <div class="row">
+                    <label class="col-md-1 control-label"></label>
+                    <div class="col-md-5 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <label class="col-md-1 control-label">E-Mail:</label>
+                    <div class="col-md-5 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                </div>
+                <div class="row">
+                    <label class="col-md-1 control-label"></label>
+                    <div class="col-md-3 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <label class="col-md-1 control-label">Pin:</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <label class="col-md-1 control-label">Op.Bal.:</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" value="0.00" name="Name" required="required"></div>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" value="D" required="required"></div>
+                    <label class="col-md-1 control-label">B'Day:</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                </div>
+                <div class="row">
+                    <label class="col-md-2	 control-label">Address 2:</label>
+                    <div class="col-md-4 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <label class="col-md-1 control-label">Status:</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <label class="col-md-1 control-label">A'Day:</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                </div>
+                <div class="row">
+                    <label class="col-md-1 control-label"></label>
+                    <div class="col-md-5 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <label class="col-md-1 control-label">Flag:</label>
+                    <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <label class="col-md-1 control-label">Disc.%:</label>
+                    <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" value="0.00" required="required"></div>
+                </div>
+                <div class="row">
+                    <label class="col-md-1 control-label">City :</label>
+                    <div class="col-md-5 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <label class="col-md-1 control-label">Area:</label>
+                    <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" value="0.00" required="required"></div>
+                    <div class="col-md-3 inputGroupContainer"><input type="text" class="form-control" name="Name" value="" required="required"></div>
+                </div>
+                <div class="row">
+                    <label class="col-md-1 control-label">Doctor :</label>
+                    <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <div class="col-md-3 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    <label class="col-md-1 control-label">Category:</label>
+                    <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" value="0.00" required="required"></div>
+                    <div class="col-md-3 inputGroupContainer"><input type="text" class="form-control" name="Name" value="" required="required"></div>
+                </div>
+                <div class="col-md-12" style="border: 2px solid #777;">
+
+                    <div class="row">
+                        <label class="col-md-2 control-label">Credit Sale[Y/N] :</label>
+                        <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" value="N" required="required"></div>
+                        <label class="col-md-1 control-label">Series Lock :</label>
+                        <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" value="1" required="required"></div>
+                        <label class="col-md-2 control-label">Branch Trf. :</label>
+                        <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+
+                    </div>
+                    <div class="row">
+                        <label class="col-md-1 control-label">Order No.Req.[Y/N]:</label>
+                        <div class="col-md-1 inputGroupContainer"> <input type="text" class="form-control" name="Name" value="N" required="required"></div>
+                        <label class="col-md-1 control-label">Credit Card[Y/N] :</label>
+                        <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" value="1" required="required"></div>
+                        <label class="col-md-1 control-label">Invoice  Format  :</label>
+                        <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                        <label class="col-md-2 control-label">Inclusive[Y/N/#] :</label>
+                        <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" value="N" required="required"></div>
+                        <label class="col-md-2 control-label">Generate Due List:</label>
+                        <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" value="N" required="required"></div>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-6 control-label">1.Sale Rate/2.Cost Rate/3.Purches Rate/4.MRP/5.W.S.Rate/6.Spl.Rate:</label>
+                        <div class="col-md-1 inputGroupContainer"> <input type="text" class="form-control" name="Name" value="1" required="required"></div>
+
+                    </div>
+
+                    <div class="row">
+                        <label class="col-md-1 control-label">Bank:</label>
+                        <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" value="0.00" required="required"></div>
+                        <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                        <label class="col-md-2 control-label">No.of Items In Bill:</label>
+                        <div class="col-md-3 inputGroupContainer"><input type="text" class="form-control" name="Name" value="N" required="required"></div>
+
+                    </div>
+                    <div class="row">
+                        <label class="col-md-1 control-label">TIN :</label>
+                        <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" value="0.00" required="required"></div>
+                        <label class="col-md-2 control-label">Account Group:</label>
+                        <div class="col-md-3 inputGroupContainer"><input type="text" class="form-control" name="Name" value="N" required="required"></div>
+
+                    </div>
+                    <div class="row">
+                        <label class="col-md-1 control-label">GST No. :</label>
+                        <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                        <label class="col-md-2 control-label">R(egistered)/U(ngistered)/C(omposite):</label>
+                        <div class="col-md-3 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+
+                    </div>
+                    <div class="row">
+                        <label class="col-md-3 control-label"></label>
+                        <label class="col-md-2 control-label">Regd.Date:</label>
+                        <div class="col-md-3 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+
+                    </div>
+                    <div class="row">
+                        <label class="col-md-2 control-label">Trnf.Account :</label>
+                        <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                        <label class="col-md-2 control-label">State Code:</label>
+                        <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-2 control-label">Full Name :</label>
+                        <div class="col-md-6 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                    </div>
+                    <div class="col-md-8" style="
+                         border 2px solid #777;
+                         width 34%;
+                         margin-left 67%;
+                         margin-top -12%;
+                         ">
+                        <div class="row">
+                            <label class="col-md-6 control-label">TB Diagnosis:</label>
+                        </div>
+                        <div class="row">
+                            <label class="col-md-8 control-label">Name Of Father/Husband:</label>
+                            <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" value="0.00" required="required"></div>
+                        </div>
+                        <div class="row">
+                            <label class="col-md-2 control-label">Age:</label>
+                            <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" value="0.00" required="required"></div>
+                            <label class="col-md-2 control-label">Sex:</label>
+                            <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" value="0.00" required="required"></div>
+                            <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" value="0.00" required="required"></div>
+                        </div>
+                        <div class="row">
+                            <label class="col-md-6 control-label">Site Of Disease:</label>
+                            <div class="col-md-4 inputGroupContainer"><input type="text" class="form-control" name="Name" value="" required="required"></div>
+                        </div>
+                        <div class="row">
+                            <label class="col-md-3 control-label">Diagnosis Date:</label>
+                            <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" value="" required="required"></div>
+                            <label class="col-md-3 control-label">Treatment Date:</label>
+                            <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" value="" required="required"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row"> -->
+            <!-- <label class="col-md-1 control-label" >Packing :</label>  -->
+            <!-- <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name"  required="required"></div> -->
+            <!-- <label class="col-md-1 control-label" >Unit :</label>  -->
+            <!-- <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" value="1" required="required"></div> -->
+            <!-- <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name"  required="required"></div> -->
+            <!-- <label class="col-md-1 control-label" >Status :</label>  -->
+            <!-- <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name"  required="required"></div> -->
+            <!-- <label class="col-md-1 control-label" >Mfg.By	 :</label>  -->
+            <!-- <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name"  required="required"></div> -->
+            <!-- <label class="col-md-1 control-label" >Bar Code:</label>  -->
+            <!-- <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name"  required="required"></div> -->
+            <!-- </div>  -->
+            <!-- <div class="row"> -->
+            <!-- <label class="col-md-1 control-label" >Schedule:</label>  -->
+            <!-- <div class="col-md-1 inputGroupContainer"> <input type="text" class="form-control" name="Name"  required="required"></div> -->
+            <!-- <label class="col-md-1 control-label" >Box Qty :</label>  -->
+            <!-- <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name"  required="required"></div> -->
+            <!-- <label class="col-md-1 control-label" >Case Qty :</label>  -->
+            <!-- <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" value="1" required="required"></div> -->
+            <!-- <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name"  required="required"></div> -->
+            <!-- <label class="col-md-1 control-label" >Min. Level:</label>  -->
+            <!-- <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name"  required="required"></div> -->
+            <!-- <label class="col-md-1 control-label" >Max. Level:</label>  -->
+            <!-- <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name"  required="required"></div> -->
+            <!-- </div>  -->
+            <!-- <div class="row"> -->
+            <!-- <label class="col-md-1 control-label" >Location:</label>  -->
+            <!-- <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name"  required="required"></div> -->
+            <!-- <label class="col-md-1 control-label" >Division:</label>  -->
+            <!-- <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name"  required="required"></div> -->
+            <!-- <label class="col-md-1 control-label" >UPC:</label>  -->
+            <!-- <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name"  required="required"></div> -->
+            <!-- <label class="col-md-1 control-label" >Lock Inv:</label>  -->
+            <!-- <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name"  required="required"></div><label class="col-md-1 control-label" >Flage:</label>  -->
+            <!-- <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name"  required="required"> -->
+            <!-- </div>  -->
+            <!-- </div> -->
+    </div>
+
+    </form>
+
+    </div>
+

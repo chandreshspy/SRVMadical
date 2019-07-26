@@ -1,0 +1,144 @@
+D:\Github\Energy\EnergyDetails\ClientDLL\bin\Debug\ClientDLL.dll
+D:\Github\Energy\EnergyDetails\ClientDLL\bin\Debug\ClientDLL.pdb
+D:\Github\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.Free.dll
+D:\Github\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.Free.xml
+D:\Github\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.dep
+D:\Github\Energy\EnergyDetails\ClientDLL\obj\Debug\ClientDLL.csprojResolveAssemblyReference.cache
+D:\Github\Energy\EnergyDetails\ClientDLL\obj\Debug\ClientDLL.dll
+D:\Github\Energy\EnergyDetails\ClientDLL\obj\Debug\ClientDLL.pdb
+E:\Project Backup\New design\Energy\EnergyDetails\ClientDLL\bin\Debug\ClientDLL.dll
+E:\Project Backup\New design\Energy\EnergyDetails\ClientDLL\bin\Debug\ClientDLL.pdb
+E:\Project Backup\New design\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.Free.dll
+E:\Project Backup\New design\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.Free.xml
+E:\Project Backup\New design\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.dep
+E:\Project Backup\New design\Energy\EnergyDetails\ClientDLL\obj\Debug\ClientDLL.csprojResolveAssemblyReference.cache
+E:\Project Backup\New design\Energy\EnergyDetails\ClientDLL\obj\Debug\ClientDLL.dll
+E:\Project Backup\New design\Energy\EnergyDetails\ClientDLL\obj\Debug\ClientDLL.pdb
+E:\GitHub\Energy\EnergyDetails\ClientDLL\bin\Debug\ClientDLL.dll
+E:\GitHub\Energy\EnergyDetails\ClientDLL\bin\Debug\ClientDLL.pdb
+E:\GitHub\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.Free.dll
+E:\GitHub\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.Free.xml
+E:\GitHub\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.dep
+E:\GitHub\Energy\EnergyDetails\ClientDLL\obj\Debug\ClientDLL.dll
+E:\GitHub\Energy\EnergyDetails\ClientDLL\obj\Debug\ClientDLL.pdb
+E:\GitHub\Energy\EnergyDetails\ClientDLL\obj\Debug\ClientDLL.csprojResolveAssemblyReference.cache
+F:\GitHub\12042018fromdinesh\Energy\EnergyDetails\ClientDLL\bin\Debug\ClientDLL.dll
+F:\GitHub\12042018fromdinesh\Energy\EnergyDetails\ClientDLL\bin\Debug\ClientDLL.pdb
+F:\GitHub\12042018fromdinesh\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.Free.dll
+F:\GitHub\12042018fromdinesh\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.Free.xml
+F:\GitHub\12042018fromdinesh\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.dep
+F:\GitHub\12042018fromdinesh\Energy\EnergyDetails\ClientDLL\obj\Debug\ClientDLL.csprojResolveAssemblyReference.cache
+F:\GitHub\12042018fromdinesh\Energy\EnergyDetails\ClientDLL\obj\Debug\ClientDLL.dll
+F:\GitHub\12042018fromdinesh\Energy\EnergyDetails\ClientDLL\obj\Debug\ClientDLL.pdb
+F:\GitHub\runnintenent\Energy\EnergyDetails\ClientDLL\bin\Debug\ClientDLL.dll
+F:\GitHub\runnintenent\Energy\EnergyDetails\ClientDLL\bin\Debug\ClientDLL.pdb
+F:\GitHub\runnintenent\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.Free.dll
+F:\GitHub\runnintenent\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.Free.xml
+F:\GitHub\runnintenent\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.dep
+F:\GitHub\runnintenent\Energy\EnergyDetails\ClientDLL\obj\Debug\ClientDLL.csprojResolveAssemblyReference.cache
+F:\GitHub\runnintenent\Energy\EnergyDetails\ClientDLL\obj\Debug\ClientDLL.dll
+F:\GitHub\runnintenent\Energy\EnergyDetails\ClientDLL\obj\Debug\ClientDLL.pdb
+E:\Energy Tenent\18-07-20018\Energy\EnergyDetails\ClientDLL\bin\Debug\ClientDLL.dll
+E:\Energy Tenent\18-07-20018\Energy\EnergyDetails\ClientDLL\bin\Debug\ClientDLL.pdb
+E:\Energy Tenent\18-07-20018\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.Free.dll
+E:\Energy Tenent\18-07-20018\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.Free.xml
+E:\Energy Tenent\18-07-20018\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.dep
+E:\Energy Tenent\18-07-20018\Energy\EnergyDetails\ClientDLL\obj\Debug\ClientDLL.dll
+E:\Energy Tenent\18-07-20018\Energy\EnergyDetails\ClientDLL\obj\Debug\ClientDLL.pdb
+E:\Energy Tenent\19-07-20018\Energy\EnergyDetails\ClientDLL\bin\Debug\ClientDLL.dll
+E:\Energy Tenent\19-07-20018\Energy\EnergyDetails\ClientDLL\bin\Debug\ClientDLL.pdb
+E:\Energy Tenent\19-07-20018\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.Free.dll
+E:\Energy Tenent\19-07-20018\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.Free.xml
+E:\Energy Tenent\19-07-20018\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.dep
+E:\Energy Tenent\19-07-20018\Energy\EnergyDetails\ClientDLL\obj\Debug\ClientDLL.dll
+E:\Energy Tenent\19-07-20018\Energy\EnergyDetails\ClientDLL\obj\Debug\ClientDLL.pdb
+E:\Energy Tenent\19-07-20018\Energy\EnergyDetails\ClientDLL\obj\Debug\ClientDLL.csprojResolveAssemblyReference.cache
+F:\GitHub\26072018FinalV3\Energy\EnergyDetails\ClientDLL\bin\Debug\ClientDLL.dll
+F:\GitHub\26072018FinalV3\Energy\EnergyDetails\ClientDLL\bin\Debug\ClientDLL.pdb
+F:\GitHub\26072018FinalV3\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.Free.dll
+F:\GitHub\26072018FinalV3\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.Free.xml
+F:\GitHub\26072018FinalV3\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.dep
+F:\GitHub\26072018FinalV3\Energy\EnergyDetails\ClientDLL\obj\Debug\ClientDLL.csprojResolveAssemblyReference.cache
+F:\GitHub\26072018FinalV3\Energy\EnergyDetails\ClientDLL\obj\Debug\ClientDLL.dll
+F:\GitHub\26072018FinalV3\Energy\EnergyDetails\ClientDLL\obj\Debug\ClientDLL.pdb
+C:\Users\DINESH\Downloads\26072018FinalV3\Energy\EnergyDetails\ClientDLL\bin\Debug\ClientDLL.dll
+C:\Users\DINESH\Downloads\26072018FinalV3\Energy\EnergyDetails\ClientDLL\bin\Debug\ClientDLL.pdb
+C:\Users\DINESH\Downloads\26072018FinalV3\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.Free.dll
+C:\Users\DINESH\Downloads\26072018FinalV3\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.Free.xml
+C:\Users\DINESH\Downloads\26072018FinalV3\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.dep
+C:\Users\DINESH\Downloads\26072018FinalV3\Energy\EnergyDetails\ClientDLL\obj\Debug\ClientDLL.csprojResolveAssemblyReference.cache
+C:\Users\DINESH\Downloads\26072018FinalV3\Energy\EnergyDetails\ClientDLL\obj\Debug\ClientDLL.dll
+C:\Users\DINESH\Downloads\26072018FinalV3\Energy\EnergyDetails\ClientDLL\obj\Debug\ClientDLL.pdb
+F:\Energy\26072018FinalV3_Budget Done\26072018FinalV3_Budget Done\Energy\EnergyDetails\ClientDLL\bin\Debug\ClientDLL.dll
+F:\Energy\26072018FinalV3_Budget Done\26072018FinalV3_Budget Done\Energy\EnergyDetails\ClientDLL\bin\Debug\ClientDLL.pdb
+F:\Energy\26072018FinalV3_Budget Done\26072018FinalV3_Budget Done\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.Free.dll
+F:\Energy\26072018FinalV3_Budget Done\26072018FinalV3_Budget Done\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.Free.xml
+F:\Energy\26072018FinalV3_Budget Done\26072018FinalV3_Budget Done\Energy\EnergyDetails\ClientDLL\bin\Debug\HiQPdf.dep
+F:\Energy\26072018FinalV3_Budget Done\26072018FinalV3_Budget Done\Energy\EnergyDetails\ClientDLL\obj\Debug\ClientDLL.dll
+F:\Energy\26072018FinalV3_Budget Done\26072018FinalV3_Budget Done\Energy\EnergyDetails\ClientDLL\obj\Debug\ClientDLL.pdb
+F:\labwebsite\dinesh\SRV\ClientDLL\bin\Debug\ClientDLL.dll
+F:\labwebsite\dinesh\SRV\ClientDLL\bin\Debug\ClientDLL.pdb
+F:\labwebsite\dinesh\SRV\ClientDLL\bin\Debug\HiQPdf.Free.dll
+F:\labwebsite\dinesh\SRV\ClientDLL\bin\Debug\HiQPdf.Free.xml
+F:\labwebsite\dinesh\SRV\ClientDLL\bin\Debug\HiQPdf.dep
+F:\labwebsite\dinesh\SRV\ClientDLL\obj\Debug\ClientDLL.dll
+F:\labwebsite\dinesh\SRV\ClientDLL\obj\Debug\ClientDLL.pdb
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\ClientDLL\obj\Debug\ClientDLL.csprojResolveAssemblyReference.cache
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\ClientDLL\obj\Debug\ClientDLL.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\ClientDLL\obj\Debug\ClientDLL.pdb
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\ClientDLL\bin\Debug\ClientDLL.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\ClientDLL\bin\Debug\ClientDLL.pdb
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\ClientDLL\bin\Debug\HiQPdf.Free.dll
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\ClientDLL\bin\Debug\HiQPdf.Free.xml
+F:\labwebsite\dinesh\Project\SRV 03Oct2018\ClientDLL\bin\Debug\HiQPdf.dep
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\ClientDLL\bin\Debug\ClientDLL.dll
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\ClientDLL\bin\Debug\ClientDLL.pdb
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\ClientDLL\bin\Debug\HiQPdf.Free.dll
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\ClientDLL\bin\Debug\HiQPdf.Free.xml
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\ClientDLL\bin\Debug\HiQPdf.dep
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\ClientDLL\obj\Debug\ClientDLL.dll
+E:\Dinesh\Dinesh\GitSRVPL\MYSRV\ClientDLL\obj\Debug\ClientDLL.pdb
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\ClientDLL\bin\Debug\ClientDLL.dll
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\ClientDLL\bin\Debug\ClientDLL.pdb
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\ClientDLL\bin\Debug\HiQPdf.Free.dll
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\ClientDLL\bin\Debug\HiQPdf.Free.xml
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\ClientDLL\bin\Debug\HiQPdf.dep
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\ClientDLL\obj\Debug\ClientDLL.csprojResolveAssemblyReference.cache
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\ClientDLL\obj\Debug\ClientDLL.dll
+F:\labwebsite\dinesh\Project\Project\up16112018\MYSRV-master\ClientDLL\obj\Debug\ClientDLL.pdb
+F:\pathlab\ProjectLabAll\Medical\SRVGit\ClientDLL\bin\Debug\ClientDLL.dll
+F:\pathlab\ProjectLabAll\Medical\SRVGit\ClientDLL\bin\Debug\ClientDLL.pdb
+F:\pathlab\ProjectLabAll\Medical\SRVGit\ClientDLL\bin\Debug\HiQPdf.Free.dll
+F:\pathlab\ProjectLabAll\Medical\SRVGit\ClientDLL\bin\Debug\HiQPdf.Free.xml
+F:\pathlab\ProjectLabAll\Medical\SRVGit\ClientDLL\bin\Debug\HiQPdf.dep
+F:\pathlab\ProjectLabAll\Medical\SRVGit\ClientDLL\obj\Debug\ClientDLL.csprojResolveAssemblyReference.cache
+F:\pathlab\ProjectLabAll\Medical\SRVGit\ClientDLL\obj\Debug\ClientDLL.dll
+F:\pathlab\ProjectLabAll\Medical\SRVGit\ClientDLL\obj\Debug\ClientDLL.pdb
+F:\RunningProjectSrv\Medical\SRVGit\ClientDLL\bin\Debug\ClientDLL.dll
+F:\RunningProjectSrv\Medical\SRVGit\ClientDLL\bin\Debug\ClientDLL.pdb
+F:\RunningProjectSrv\Medical\SRVGit\ClientDLL\bin\Debug\HiQPdf.Free.dll
+F:\RunningProjectSrv\Medical\SRVGit\ClientDLL\bin\Debug\HiQPdf.Free.xml
+F:\RunningProjectSrv\Medical\SRVGit\ClientDLL\bin\Debug\HiQPdf.dep
+F:\RunningProjectSrv\Medical\SRVGit\ClientDLL\obj\Debug\ClientDLL.csprojResolveAssemblyReference.cache
+F:\RunningProjectSrv\Medical\SRVGit\ClientDLL\obj\Debug\ClientDLL.dll
+F:\RunningProjectSrv\Medical\SRVGit\ClientDLL\obj\Debug\ClientDLL.pdb
+E:\project\25-05-2019\SRVGit\ClientDLL\bin\Debug\ClientDLL.dll
+E:\project\25-05-2019\SRVGit\ClientDLL\bin\Debug\ClientDLL.pdb
+E:\project\25-05-2019\SRVGit\ClientDLL\bin\Debug\HiQPdf.Free.dll
+E:\project\25-05-2019\SRVGit\ClientDLL\bin\Debug\HiQPdf.Free.xml
+E:\project\25-05-2019\SRVGit\ClientDLL\bin\Debug\HiQPdf.dep
+E:\project\25-05-2019\SRVGit\ClientDLL\obj\Debug\ClientDLL.dll
+E:\project\25-05-2019\SRVGit\ClientDLL\obj\Debug\ClientDLL.pdb
+E:\project\25-05-2019\SRVGit\ClientDLL\obj\Debug\ClientDLL.csprojResolveAssemblyReference.cache
+E:\project\25-05-2019\SRVGit\ClientDLL\bin\Debug\EntityModel.dll
+E:\project\25-05-2019\SRVGit\ClientDLL\bin\Debug\EntityModel.pdb
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\ClientDLL\bin\Debug\ClientDLL.dll
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\ClientDLL\bin\Debug\ClientDLL.pdb
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\ClientDLL\bin\Debug\EntityModel.dll
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\ClientDLL\bin\Debug\HiQPdf.Free.dll
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\ClientDLL\bin\Debug\EntityModel.pdb
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\ClientDLL\bin\Debug\HiQPdf.Free.xml
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\ClientDLL\bin\Debug\HiQPdf.dep
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\ClientDLL\obj\Debug\ClientDLL.csprojResolveAssemblyReference.cache
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\ClientDLL\obj\Debug\ClientDLL.dll
+F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\ClientDLL\obj\Debug\ClientDLL.pdb

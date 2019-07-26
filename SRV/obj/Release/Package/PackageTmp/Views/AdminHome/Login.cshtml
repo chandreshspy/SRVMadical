@@ -1,0 +1,101 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "";
+}
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<link href="~/css/login.css" rel="stylesheet" />
+<!------ Include the above in your HEAD tag ---------->
+<html>
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+</head>
+<body id="LoginForm">
+    <div class="container">
+        <h1 class="form-heading"></h1>
+        <div class="login-form">
+            <div class="main-div">
+                <div class="panel">
+                    <h2>Admin Login</h2>
+                    <p>Please enter your email and password</p>
+                </div>
+                @*<form id="Login">*@
+                    <div class="form-group">
+
+                        <input type="email" class="form-control" id="txtuserid" placeholder="User Id">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="txtPassword" placeholder="Password">
+                    </div>
+                    <div class="forgot">
+                        <a href="reset.html">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary" onclick="LoginUser()">Login</button>
+                @*</form>*@
+            </div>
+            <p class="botto-text"></p>
+        </div>
+    </div></div>
+
+
+</body>
+</html>
+<script>
+    function LoginUser() {
+        var UserId = $("#txtuserid").val();
+        var Password = $("#txtPassword").val();
+        var obj = JSON.stringify({
+                'UserId': UserId,
+            'Password': Password,
+        });
+        $.ajax({
+            url: "/Message/UserLogin",
+            type: 'POST',
+            async: false,
+            dataType: 'json',
+            contentType: 'application/json',
+            data: obj,
+            success: function (result) {
+                if (result == "Succes")
+                {
+                    var url = "/Message/SendMessage";
+                    window.location.href = url;
+                }
+            }
+        });
+    }
+    //function LoginUser() {
+    //    var UserId = $("#txtuserid").val();
+    //    var Password = $("#txtPassword").val();
+    //    //var obj = JSON.stringify({
+    //    //    'UserId': UserId,
+    //    //    'Password': Password
+    //    //});
+    //    $.ajax({
+    //        url: '../Message/UserLogin',
+    //        type: "POST",
+    //        contentType: false, // Not to set any content header
+    //        processData: true, // Not to process data
+    //        data: { 'UserId': UserId, 'Password': Password },
+    //        success: function (result) {
+    //            var res = result;
+    //        }
+    //        //$.ajax({
+    //        //    url: "/AdminHome/AddABoutusdetails",
+    //        //    type: 'POST',
+    //        //    async: false,
+    //        //    dataType: 'json',
+    //        //    contentType: 'application/json',
+    //        //    data: formData,
+    //        //    success: function (result) {
+    //        //        window.location.reload();
+    //        //    }
+    //    });
+    //}
+</script>
+

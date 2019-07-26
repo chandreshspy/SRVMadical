@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "Contact Us";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="colorlib-contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 animate-box">
+                <h3>Contact Information</h3>
+                <div class="row contact-info-wrap">
+                    <div class="col-md-3">
+                        <p><span><i class="icon-location"></i></span> A-218, Street No. 8A, 4 ½ Pusta, <br> Delhi-110053</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p><span><i class="icon-phone"></i></span> <a href="tel://123456792">+91 913 678 2323</a></p>
+                    </div>
+                    <div class="col-md-3">
+                        <p><span><i class="icon-mail"></i></span> <a href="mailto:info@srvpathlabs.com">info@srvpathlabs.com</a></p>
+                    </div>
+                    <div class="col-md-3">
+                        <p><span><i class="icon-globe-outline"></i></span> <a href="#">srvpathlab.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10 col-md-offset-1 animate-box">
+                <h3>Get In Touch</h3>
+                <form action="#">
+                    <div class="row form-group">
+                        <div class="col-md-6">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" class="form-control mb" placeholder="Your firstname">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" class="form-control" placeholder="Your lastname">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" class="form-control" placeholder="Your email address">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group text-center">
+                        <input type="submit" value="Send Message" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="map" class="colorlib-map"></div>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOKtZOo1UZ2VYHj6BrprF6KHWsT0-Sne8"></script>
+<script src="~/js/google_map.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#Home').removeClass('active');
+        $('#Contact').addClass('active');
+    })
+</script>

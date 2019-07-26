@@ -1,0 +1,309 @@
+﻿
+@{
+    ViewBag.Title = "strin";
+    Layout = "~/Views/Shared/navigation.cshtml";
+}
+
+<head>
+    <link href="~/css/itemmaster.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+    <h3 class="h1">-: CUSTOMER :- </h3>
+    <div class="signup-form">
+        <form method="post">
+
+
+            
+                <div class="row">
+                    <div class="col-md-3" style="border: 2px solid #777; padding:10px;">
+                        <div class="row">
+                            <label class="col-md-10 control-label"> Code :  CS </label>
+                            <label class="col-lg-1 control-label" style="color: blue;" > R</label>
+                            </div>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <div class="row" style="border-bottom:1px solid #777; color:green;">
+                            <label class="col-lg-offset-4"> Balance </label>
+
+
+                            </div>
+                        <br />
+                        <br />
+
+                        <div class="row"style="border-bottom:1px solid #777;">
+                            <label class="col-md-3"> Opening  </label>
+                            <label class="col-md-2"> :  </label>
+                            <label class="col-lg-2-offset-"> Nill   </label>
+                            <label class="col-md-7"> Closing</label>
+                            <label class="col-md-2"> :  </label>
+                            <br />
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        
+                        <div class="row">
+                            
+                            <label class="col-md-3"> Tin :  </label>
+                            </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                            <div class="row">
+                                <label class="col-md-8"> </label>
+                                <label class="col-md-4"> Retail  </label>
+                            </div>
+                        <br>
+                        <br>
+                        
+                       
+                        <div class="row" style="border-bottom:1px solid #777;">
+                            <label class="col-lg-offset-1"> Inclusive :</label>
+                            <label class="col-md-3"> N  </label>
+                            <label class="col-md-push-0" > Add % :</label>
+                            <label class="col-md-1"> 0  </label>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+
+                        </div>
+                        
+                        <br />
+                        <div class="row" style="border-bottom:1px solid #777;">
+                            <label class="col-lg-offset-1"> Sale Rate Type:</label>
+                            
+                            <label class="col-md-1"> 1  </label>
+                            <br />
+                            <br />
+                        </div>
+                        <br />
+                        Status :
+
+                        </div>
+                    <div class="col-md-7" style="border: 2px solid #777; padding:10px;">
+                        <table>
+                            <tr>
+                                <td>     
+                                    <input class="form-control mr-sm-2" type="text" id="CompanySearch" onkeyup="SearchCompanys()" placeholder="Search String" aria-label="Search">
+                                    @*</form>*@
+                                </td>
+                            </tr>
+                        </table>
+                        <div style="max-height : 334px; overflow : auto;">
+                            <table class="table" id="dvCompanys"></table>
+                        </div>
+
+
+                        <script>
+    function SearchCompanys() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("CompanySearch");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("dvCompanys");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+    $(document).ready(function () {
+        GetCompanys();
+    });
+    function Get_CompanyCode(code) {
+        alert(code);
+    }
+
+    function GetCompanys() {
+        var CompanyDtls = "";
+        var Urls = "../CompanyMaster/GetCompanys";
+        //var Urls = window.location.pathname + "/Proteus/GetLoginDetails";
+        var data = JSON.stringify({});
+        $.ajax({
+            url: Urls,
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            data: data, // pass that text to the server as a correct JSON String
+            success: function (resp) {
+                // var JString = resp.data;
+                var JString = resp
+                dsnew = JSON.parse(JString);
+
+                if (dsnew && dsnew != 'null') {
+                    CompanyDtls = "<thead class='thead-dark'>" +
+                           "<tr><th scope='col'>Name</th>" +
+                            "<th scope='col'>Shortname</th>" +
+                            "</tr></thead><tbody>"
+                    for (var i = 0; i <= dsnew.Table.length - 1; i++) {
+                        CompanyDtls += "<tr onclick='Get_CompanyCode(" + dsnew.Table[i].Name + ");'><td>" + dsnew.Table[i].Name + "</td><td>" + dsnew.Table[i].Shortname + "</td></tr>"
+                    }
+                    CompanyDtls += "</tbody>";
+                }
+                $("#dvCompanys").html(CompanyDtls);
+            },
+            //error: function (xhr, ajaxOptions, thrownError) {
+            //}
+        });
+
+    }
+                        </script>  
+                        <br />
+                        <br />
+                        <div class="col-md-6" style="padding:10px;">
+                            <div class="row" style="border-top:1px solid #777; ">
+                                <label class="col-lg-offset-1"> Address:</label>
+                                <text class="col-md-5"></text>
+                                
+                                <br />
+                                <br />
+                            </div>
+                            </div>
+                        <div class="col-md-6" style="padding:10px;">
+                            <div class="row" style="border-top:1px solid #777; ">
+                                <label class="col-lg-offset-1"> Birth Day:</label>
+                                <text class="col-lg-offset-7"></text>
+                                <label class="col-lg-offset-1"> Anneversary:</label>
+                                <text class="col-lg-offset-7"></text>
+                                <label class="col-lg-offset-1"> Fax:</label>
+                                <text class="col-lg-offset-7"></text>
+
+                              
+</div>
+                            
+
+                        </div>
+                        <div class="col-md-6" style="padding:10px;">
+                            <div class="row" style="border-top:1px solid #777; ">
+                                <label class="col-lg-offset-1"> Teli(off):</label>
+                                <text class="col-lg-offset-7"></text>
+                                <label class="col-lg-offset-1"> Telli(Resi):</label>
+                                <text class="col-lg-offset-7"></text>
+                                <br>
+                                <br>
+                                
+                                <label class="col-lg-offset-1"> E Mail:</label>
+                                <text class="col-lg-offset-7"></text>
+
+                               
+                            </div>
+                        </div>
+                        <div class="col-md-6" style="padding:10px;">
+                            <div class="row" style="border-top:1px solid #777; ;">
+                                <label class="col-lg-offset-1"> Mobile:</label>
+                                <text class="col-lg-offset-7"></text>
+                                <label class="col-lg-offset-1"> Mobile:</label>
+                                <text class="col-lg-offset-7"></text>
+                                <label class="col-lg-offset-1"> Pannel:</label>
+                                <text class="col-lg-offset-7"></text>
+                                <label class="col-lg-offset-1"> Dis%:</label>
+                                <text class="col-lg-offset-7"></text>
+
+
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-6" style="padding:10px;">
+                            <div class="row" style="border-top:1px solid #777; ;">
+                                <label class="col-lg-offset-1"> Family:</label>
+                                <text class="col-lg-offset-7"></text>
+                                <br>
+                                <br>
+                                <br>
+                                <label class="col-lg-offset-1"> Doctor Name:</label>
+                                <text class="col-lg-offset-7"></text>
+
+
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-6" style="padding:10px;">
+                            <div class="row" style="border-top:1px solid #777; ;">
+                                <label class="col-lg-offset-1"> Credit Sale:</label>
+                                <text class="col-lg-offset-7"></text>
+                                <br>
+                                <br>
+                                <label style="color:lawngreen" class="col-lg-offset-1"> MASTER:</label>
+                                <text class="col-lg-offset-7"></text>
+                                
+
+
+                            </div>
+
+
+                        </div>
+                        </div>
+                    <div class="col-md-2" style="border: 2px solid #777;">
+<div class="row">
+                            <button class="col-md-6"> New(F9) </button>
+                            <button class="col-md-6" > Edit(F3)</button>
+                            <button class="col-md-6"> Delete </button>
+                            <button class="col-md-6"> Exit</button>
+                            <button class="col-md-12"> Due List (F5)</button>
+                            <button class="col-md-12"> Ledger (F10)</button>
+                            <button class="col-md-12"> Remark </button>
+                            <button class="col-md-12"> Note Book</button>
+                            <button class="col-md-12"> Pending Challans </button>
+                            <button class="col-md-12"> Expiry Ledger</button>
+                            <label  class="col-md-12"> Special Rates</label>
+                            <button class="col-md-12"> List of Bills(F2)</button>
+                            <button class="col-md-12"> Receipt(F8)</button>
+                            <button class="col-md-12"> Family Group</button>
+                            <button class="col-md-12"> Prescription List</button>
+
+    <label class="col-md-12"> </label>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
+                            <button class="col-md-12"> Pending Order(F7)</button>
+                            <button class="col-md-12"> Select Category</button>
+                            <button class="col-md-12"> Staff Details</button>
+                            <button class="col-md-12"> State Mismatch</button>
+    <label class="col-md-12"> </label>
+    <br>
+    <br>
+    
+                               <label class="col-md-12">Search By </label>
+                              <button class="col-md-12"> 1. Split Name</button>
+                              <button class="col-md-12"> 2. Alter Code</button>
+                              <button class="col-md-6"> 3.Mobile</button>
+                              <button class="col-md-6"> 4.Tel.</button>
+                              <button class="col-md-12">5. Address</button>
+                              <button class="col-md-12">6. Dl No.</button>
+                              <button class="col-md-12">7. GSTIN</button>
+                              <button class="col-md-12">8. Customer Id</button>
+                        </div>
+
+                    </div>
+
+
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+
+

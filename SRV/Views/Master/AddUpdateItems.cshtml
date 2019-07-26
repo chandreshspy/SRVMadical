@@ -1,0 +1,531 @@
+﻿
+@{
+    ViewBag.Title = "Itemmaste";
+    Layout = "~/Views/Shared/navigation.cshtml";
+}
+<head>
+    <link href="~/css/itemmaster.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+    <h3 class="h1">-: ITEM MASTER :- </h3>
+    <div class="signup-form">
+        <form id="FormIteams">
+            <div class="col-md-12" style="border: 2px solid #777; padding:10px;">
+                <div class="row">
+                    <label class="col-md-1 control-label">Name :</label>
+                    <div class="col-md-4 inputGroupContainer"><input type="text" class="form-control" id="txtName" name="Name" required="required"></div>
+                    <label class="col-md-1 control-label">Company:</label>
+                    <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" id="txtCompany" name="Company" required="required"></div>
+                    <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" id="txtCompanySubName" name="CompanySubName" required="required"></div>
+                    <div class="col-md-2 inputGroupContainer"><input type="text" style="width: 43%;" class="form-control" id="txtCompanySubName2"  name="CompanySubName2" required="required"></div>
+                </div>
+
+
+                <div class="row">
+                    <label class="col-md-1 control-label">Packing :</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" id="txtPacking" name="Packing" required="required"></div>
+                    <label class="col-lg-offset-0">Unit :</label>
+                    <div class="col-md-1"><input type="text" class="form-control" id="txtUnit" name="Unit" value="1" required="required"></div>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" id="txtSubUnit" name="SubUnit" required="required"></div>
+                    <label class="col-lg-offset-0">Status :</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" id="txtStatus" name="Status" required="required"></div>
+                    <label class="col-md-1 control-label">Mfg.By	 :</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" id="txtMfgBy" name="MfgBy" required="required"></div>
+                    <label class="col-lg-offset-0 control-label">Bar Code:</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" id="txtBarCode" name="BarCode" required="required"></div>
+                    <label class="col-md-1 control-label">Schedule:</label>
+                    <div class="col-md-1 inputGroupContainer"> <input type="text" class="form-control" id="txtSchedule"name="Schedule" required="required"></div>
+                </div>
+                <div class="row">
+
+                    <label class="col-md-1 control-label">Box Qty :</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" id="txtBoxQty"name="BoxQty" required="required"></div>
+                    <label class="col-lg-offset-0 control-label">Case Qty :</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" id="txtCaseQty" name="CaseQty" value="1" required="required"></div>
+
+                    <label class="col-lg-offset-0 control-label">Min. Level:</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" id="txtMinLevel" name="MinLevel" required="required"></div>
+                    <label class="col-lg-offset-0 control-label">Max. Level:</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" id="txtMaxLevel" name="MaxLevel" required="required"></div>
+                    <label class="col-lg-offset-0 control-label">Location:</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" id="txtLocation" name="Location" required="required"></div>
+                    <label class="col-lg-offset-0 control-label">Division:</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" id="txtDivision" name="Division" required="required"></div>
+                    <label class="col-lg-offset-0 control-label">UPC:</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" id="txtUPC" name="UPC" required="required"></div>
+                </div>
+
+                <div class="row">
+
+
+                    <label class="col-lg-offset-4 control-label">Lock Inv:</label>
+                    <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" id="txtLockInv" name="LockInv" required="required"></div>
+                    <label class="col-md-1 control-label">Flage:</label>
+                    <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" id="txtFlage" name="Flage" required="required"></div>
+
+
+                </div>
+            </div>
+            <div class="col-md-12" style="border:2px solid black">
+
+                <div class="col-md-2" style="border: 2px solid #777;margin-left: -15px;width: 17%; margin-bottom:-1%;">
+
+                    <div class="row">
+                        <h4 class="h4"> Sale Details </h4>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-4 control-label">  S.Rate: </label>
+                        <div class="col-md-7"><input type="text" class="form-control" id="txtSRate" name="SRate" required="required"></div>
+
+
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <label class="col-lg-offset-1 control-label">S.C.(%):</label>
+                        <div class="col-md-5"><input type="text" class="form-control" id="txtSCPercentage" name="SCPercentage" required="required"></div>
+                    </div>
+                    <div class="row">
+                        <label class="col-lg-offset-1 control-label">MRP:</label>
+                        <div class="col-md-7"><input type="text" class="form-control" id="txtMRP" name="MRP" required="required"></div>
+                        <label class="col-lg-offset-0 control-label">Net</label>
+                    </div>
+                    <div class="row">
+                        <label class="col-lg-offset-0 control-label">W.S. Rate:</label>
+                        <div class="col-md-4"><input type="text" class="form-control" id="txtWSRate" name="WSRate" required="required"></div>
+                        <div class="col-md-3"><input type="text" class="form-control" id="txtWSRate2" name="WSRate2" required="required"></div>
+                    </div>
+                    <div class="row">
+                        <label class="col-lg-offset-0 control-label">Spl.Rate:</label>
+                        <div class="col-md-4"><input type="text" class="form-control" id="txtSplRate" name="SplRate" required="required"></div>
+                        <div class="col-md-4"><input type="text" class="form-control" id="txtSplRate2" name="SplRate2" required="required"></div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <label class="col-lg-offset-0 control-label">Min.GP:</label>
+                        <div class="col-sm-4"><input type="text" class="form-control" id="txtMinGP" name="MinGP" required="required"></div>
+
+                    </div>
+                    <br>
+
+                </div>
+                <div class="col-md-2" style="border: 2px solid #777;margin-left: 0%;width: 20%;">
+
+                    <div class="row">
+                        <h4 class="h4"> Purchase Details </h4>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-4 control-label">P.Rate:</label>
+                        <div class="col-md-7"><input type="text" class="form-control" id="txtPRate" name="PRate" required="required"></div>
+
+                    </div>
+                    <div class="row">
+                        <label class="col-md-5 control-label">S.C.(%):</label>
+                        <div class="col-md-6 inputGroupContainer"><input type="text" class="form-control" id="txtPurchaseSCPercentage" name="PurchaseSCPercentage" required="required"></div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="row">
+                        <label class="col-md-5 control-label">Excise:</label>
+                        <div class="col-md-6 inputGroupContainer"><input type="text" class="form-control" id="txtExcise" name="Excise" required="required"></div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <label class="col-md-4 control-label">Scheme:</label>
+                        <div class="col-md-4 inputGroupContainer"><input type="text" class="form-control" id="txtScheme" name="Scheme" required="required"></div>
+                        +<div class="col-md-3 inputGroupContainer"><input type="text" class="form-control" id="txtScheme2" name="Scheme2" required="required"></div>
+                    </div>
+                    <div class="row">
+                        <label class="col-lg-offset-6 control-label">NR:</label>
+                        <div class="col-md-4 inputGroupContainer"><input type="text" class="form-control" id="txtNR" name="NR" required="required"></div>
+
+                    </div>
+                    <br>
+
+                </div>
+                <div class="col-md-2" style="border: 2px solid #777;margin-left: 0%;width: 20%;">
+
+                    <div class="row">
+                        <h4 class="h4"> GST Details </h4>
+                        <br />
+                        <br>
+                        <br>
+
+
+
+                    </div>
+                    <div class="row">
+                        <label style="background-color:#eb0f0f; color:white;" class="col-lg-push-1 control-label">HSN Code:</label>
+                        <div class="col-md-7"><input type="text" class="form-control" id="txtGST_HSNCode" name="GST_HSNCode" required="required"></div>
+
+                    </div>
+                    <div class="row">
+                        <label style="background-color:#eb0f0f; color:white;" class="col-lg-offset-1">CGST%:</label>
+                        <div class="col-md-6"><input type="text" class="form-control" id="txtGST_CGSTPer" name="GST_CGSTPer" required="required"></div>
+
+                    </div>
+                    <div class="row">
+                        <label style="background-color:#eb0f0f; color:white;" class="col-lg-offset-1 ">SGST%:</label>
+                        <div class="col-md-6"><input type="text" class="form-control" id="txtGST_SGSTPer" name="GST_SGSTPer" required="required"></div>
+
+                    </div>
+                    <div class="row">
+                        <label style="background-color:#eb0f0f; color:white;" class="col-lg-offset-1 ">IGST%:</label>
+                        <div class="col-md-6"><input type="text" class="form-control" id="txtGST_IGSTPer" name="GST_IGSTPer" required="required"></div>
+
+                    </div>
+                    <div class="row">
+                        <label style="background-color:#eb0f0f; color:white;" class="col-lg-offset-1">Cess%:</label>
+                        <div class="col-md-6"><input type="text" class="form-control" id="txtGST_CessPer" name="GST_CessPer" required="required"></div>
+
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+
+                </div>
+
+                <div class="col-md-6" style="border: 2px solid #777;margin-left: 0%;">
+                    <div class="row">
+                        <h4 class="h4"> Other Details </h4>
+                        <br />
+                        <br>
+                    </div>
+                    <div class="col-md-3" style="border: 2px solid #777;margin-left: -3%;">
+                        <br>
+                        <div class="row">
+                            <label class="col-lg-offset-0 control-label">VAT(%):</label>
+                            <div class="col-md-7 inputGroupContainer"><input type="text" class="form-control" id="txtOD_VATPer" name="OD_VATPer" required="required"></div>
+
+                        </div>
+                        <div class="row">
+                            <label class="col-md-6 control-label">Expiry:</label>
+                            <div class="col-md-6 inputGroupContainer"><input type="text" class="form-control" id="txtOD_Expiry" name="OD_Expiry" required="required"></div>
+                        </div>
+                        <div class="row">
+                            <label class="col-md-6 control-label">Generic:</label>
+                            <div class="col-md-6 inputGroupContainer"><input type="text" class="form-control" id="txtOD_Generic" name="OD_Generic" required="required"></div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                    </div>
+                    <div class="col-md-5" style="border: 2px solid #777;margin-left: 0%;">
+                        <br>
+                        <div class="row">
+                            <label class="col-lg-offset-0 control-label">Fixed Dis.(Y/N/M):</label>
+                            <div class="col-md-5 inputGroupContainer"><input type="text" class="form-control" id="txtFixedDis" name="FixedDis" Value="N" required="required"></div>
+
+                        </div>
+
+                        <div class="row">
+                            <label class="col-lg-offset-0 control-label">Inclusive:</label>
+                            <div class="col-md-4 inputGroupContainer"><input type="text" class="form-control" Value="Y" id="txtInclusive" name="Inclusive" required="required"></div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row">
+                            <label class="col-lg-offset-0 control-label">Max Inv.Qty:</label>
+                            <div class="col-md-4 inputGroupContainer"><input type="text" class="form-control" id="txtMaxInvQty" name="MaxInvQty" required="required"></div>
+
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <div class="row">
+                            <label class="col-lg-offset-0 control-label">Locks:</label>
+                            <div class="col-md-3 inputGroupContainer"><input type="text" class="form-control" id="txtLocks" name="Locks" required="required"></div>
+                            <label class="col-lg-offset-0 control-label">Max.Dis.:</label>
+                            <div class="col-md-3 inputGroupContainer"><input type="text" class="form-control" id="txtMaxDis" name="MaxDis" required="required"></div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+
+
+                    </div>
+                    <div class="col-lg-offset-4" style="border: 2px solid #777;  margin-left: -3%; margin-block-end:22%; margin-inline-end: -3%;">
+                        <div class="row">
+                            <label class="col-lg-offset-0 control-label">Bar Code:</label>
+                            <div class="col-md-7 inputGroupContainer">
+                            <input type="text" class="form-control" value="0.00" id="txtBarCode2" name="BarCode2" required="required"></div>
+                        </div>
+                        <div class="row">
+                            <label class="col-lg-offset-0 control-label">Def.Qty:</label>
+                            <div class="col-md-4 inputGroupContainer">
+                            <input type="text" class="form-control" value="0.00" id="txtDefQty" name="DefQty" required="required"></div>
+
+
+                        </div>
+                        <div class="row">
+                            <label class="col-lg-offset-0 control-label">Volume:</label>
+                            <div class="col-md-4 inputGroupContainer">
+                            <input type="text" class="form-control" value="0.00" id="txtVolume" name="Volume" required="required"></div>
+                        </div>
+                        <div class="row">
+                            <label class="col-lg-offset-0 control-label">Comp.Name(BC):</label>
+                            <div class="col-md-4 inputGroupContainer">
+                            <input type="text" class="form-control" value="0.00" id="txtCompNameBC"name="CompNameBC" required="required"></div>
+                        </div>
+                        <div class="row">
+                            <label class="col-lg-push-0 control-label">Comman Item:</label>
+                            <div class="col-md-4 inputGroupContainer"><input type="text" class="form-control" value="0.00" id="txtCommanItem" name="CommanItem" required="required"></div>
+                        </div>
+                        <div class="row">
+                            <label class="col-lg-offset-0 control-label">Prescription Req.:</label>
+                            <div class="col-md-4 inputGroupContainer">
+                            <input type="text" class="form-control" value="0.00" id="txtPrescriptionReq" name="PrescriptionReq" required="required"></div>
+                        </div>
+                        <div class="row">
+                            <label class="col-lg-offset-0 control-label">Series Lock:</label>
+                            <div class="col-md-4 inputGroupContainer"><input type="text" class="form-control" value="0.00" id="txtSeriesLock" name="SeriesLock" required="required"></div>
+
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12" style="border:2px solid black">
+                <div class="row">
+                    <label class="col-lg-offset-5 control-label">Current Scheme:</label>
+                    <div class="col-md-1 inputGroupContainer">
+                    <input type="text" class="form-control" id="txtCurrentScheme" name="CurrentScheme" required="required"></div>
+
+
+                </div>
+                <div class="row">
+                    <label class="col-lg-offset-6 control-label">Category:</label>
+                    <div class="col-md-1  inputGroupContainer">
+                    <input type="text" class="form-control" id="txtCategory" name="Category" required="required"></div>
+                    <div class="col-md-4  inputGroupContainer">
+                    <input type="text" class="form-control" id="txtCategory2 " name="Category2" required="required"></div>
+                </div>
+                <div class="row">
+                    <label style="color:rebeccapurple;" class="col-lg-offset-6 control-label">Commodity Code:</label>
+                    <div class="col-md-1"><input type="text" class="form-control" id="txtCommodityCode" name="CommodityCode" required="required"></div>
+                    <div class="col-md-3  inputGroupContainer"><input type="text" class="form-control" id="txtCommodityCode2" name="CommodityCode2" required="required"></div>
+
+                </div>
+                <div class="row">
+                    <label style="color:lightgreen;" class="col-md-12 control-label">Generics:</label>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <label class="col-md-offset-0 control-label">1 :</label>
+                        <div class="col-md-1 inputGroupContainer">
+                        <input type="text" class="form-control" id="txtGenerics1" name="Generics1" required="required"></div>
+
+                        <div class="col-md-pull-3 inputGroupContainer"><input type="text" id="txtGenerics11" class="form-control" name="Generics11" required="required"></div>
+                        <div class="col-lg-pull-0 inputGroupContainer"><input type="text" class="form-control" id="txtGenerics12"  name="Generics12" required="required"></div>
+                        <label class="col-md-offset-1 control-label">2 :</label>
+                        <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" id="txtGenerics2"  name="Generics2" required="required"></div>
+
+                        <div class="col-md-pull-3 inputGroupContainer"><input type="text" class="form-control" id="txtGenerics21"  name="Generics21" required="required"></div>
+                        <div class="col-lg-pull-0 inputGroupContainer"><input type="text" class="form-control" id="txtGenerics22"  name="Generics22" required="required"></div>
+
+
+                    </div>
+                    <div class="row">
+                        <label class="col-md-offset-0 control-label">3 :</label>
+                        <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" id="txtGenerics3" name="Generics3" required="required"></div>
+
+                        <div class="col-md-pull-3 inputGroupContainer"><input type="text" class="form-control" id="txtGenerics31" name="Generics31" required="required"></div>
+                        <div class="col-lg-pull-0 inputGroupContainer"><input type="text" class="form-control" id="txtGenerics32" name="Generics32" required="required"></div>
+                        <label class="col-md-offset-1 control-label">4 :</label>
+                        <div class="col-md-1 inputGroupContainer">
+                        <input type="text" class="form-control" id="txtGenerics4" name="Generics4" required="required"></div>
+
+                        <div class="col-md-pull-3 inputGroupContainer"><input type="text" class="form-control" id="txtGenerics41" name="Generics41" required="required"></div>
+                        <div class="col-lg-pull-0 inputGroupContainer"><input type="text" class="form-control" id="txtGenerics42" name="Generics42" required="required"></div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <label style="color:lightgreen;" class="col-md-12 control-label"> Other Generics:</label>
+                    </div>
+
+                    <div class="row">
+                        <label class="col-md-offset-0 control-label">5 :</label>
+                        <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" id="txtOtherGenerics5" name="OtherGenerics5" required="required"></div>
+
+                        <div class="col-md-pull-3 inputGroupContainer"><input type="text" class="form-control" id="txtOtherGenerics51" name="OtherGenerics51" required="required"></div>
+                        <div class="col-lg-pull-0 inputGroupContainer"><input type="text" class="form-control" id="txtOtherGenerics52" name="OtherGenerics52" required="required"></div>
+                        <label class="col-md-offset-1 control-label">6 :</label>
+                        <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" id="txtOtherGenerics6" name="OtherGenerics6" required="required"></div>
+
+                        <div class="col-md-pull-3 inputGroupContainer"><input type="text" class="form-control" id="txtOtherGenerics61" name="OtherGenerics61" required="required"></div>
+                        <div class="col-lg-pull-0 inputGroupContainer"><input type="text" class="form-control" id="txtOtherGenerics62" name="OtherGenerics62" required="required"></div>
+
+                    </div>
+                </div>
+                <div class="col-md-12" style="margin-left: 91%;">
+
+                    <input type="button" value="Save" onclick="AddIteams()" />
+                    <input type="button" value="Exit" />
+
+                </div>
+            </div>
+        </form>
+</body>
+
+
+
+<script>
+    function AddIteams() {
+        var formData = new FormData($('#FormIteams')[0]);
+        $.ajax({
+            url: '../Master/AddIteamDetails',
+            type: "POST",
+            contentType: false, // Not to set any content header
+            processData: false, // Not to process data
+            data: formData,
+            success: function (result) {
+                var res = result;
+            }
+        });
+    }
+    function Get_ItemCode(code) {
+        var Urls = "../Master/itemEdit";
+        $.ajax({
+            url: Urls,
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            data: '{"code":' + code + '}', // pass that text to the server as a correct JSON String
+            success: function (data) {
+                var jsonData = data.redirectTo1;
+                console.log(jsonData);
+                var jsonformate = JSON.parse(jsonData);
+                console.log(jsonformate);
+                $("#txtName").val(jsonformate[0].name);
+                var company = "";
+                if (jsonformate[0].CAcode=="")
+                {
+                    company = "----";
+                }
+                else {
+                    company = jsonformate[0].CAcode;
+                }
+                $("#txtCompany").val()
+                $("#txtCompanySubName").val(company);
+                $("#txtCompanySubName2").val(jsonformate[0].Compname);
+                $("#txtPacking").val(jsonformate[0].Pack);
+                $("#txtUnit").val(jsonformate[0].Unit);
+                $("#txtSubUnit").val("Unit");
+                $("#txtStatus").val("");
+                $("#txtMfgBy").val(jsonformate[0].MfgBy);
+                $("#txtBarCode").val(jsonformate[0].Barcode);
+                $("#txtSchedule").val("00");
+                $("#txtBoxQty").val(jsonformate[0].Box);
+                $("#txtCaseQty").val("00");
+                $("#txtMinLevel").val(jsonformate[0].MinQty);
+                $("#txtMaxLevel").val(jsonformate[0].MaxQty);
+                $("#txtLocation").val(jsonformate[0].Location);
+                $("#txtDivision").val(jsonformate[0].Division);
+                $("#txtUPC").val(jsonformate[0].UPCCode);
+                $("#txtLockInv").val(jsonformate[0].LockBilling);
+                $("#txtFlage").val(jsonformate[0].Flag);
+                $("#txtSRate").val(jsonformate[0].Srate);
+                $("#txtSCPercentage").val(jsonformate[0].Sc);
+                $("#txtMRP").val(jsonformate[0].Mrp);
+                $("#txtWSRate").val(jsonformate[0].Wsrate);
+                $("#txtWSRate2").val(jsonformate[0].WsNet);
+                $("#txtSplRate").val(jsonformate[0].splrate);
+                $("#txtSplRate2").val(jsonformate[0].SplNet);
+                $("#txtMinGP").val(jsonformate[0].MinGP);
+                $("#txtPRate").val(jsonformate[0].Prate);
+                $("#txtPurchaseSCPercentage").val(jsonformate[0].PurNetRate);
+                $("#txtExcise").val(jsonformate[0].PurExciseAsRate);
+                $("#txtNR").val("0.00");
+                $("#txtScheme").val(jsonformate[0].Scm1);
+                $("#txtScheme2").val(jsonformate[0].scm2);
+                $("#txtGST_HSNCode").val(jsonformate[0].HSNCode);
+                $("#txtGST_CGSTPer").val(jsonformate[0].CGST);
+                $("#txtGST_SGSTPer").val(jsonformate[0].SGST);
+                $("#txtGST_IGSTPer").val(jsonformate[0].IGST);
+                $("#txtGST_CessPer").val(jsonformate[0].GSTCess);
+                $("#txtOD_VATPer").val(jsonformate[0].VAT);
+                $("#txtOD_Expiry").val(jsonformate[0].Expiry);
+                $("#txtOD_Generic").val(jsonformate[0].Generic);
+                $("#txtFixedDis").val(jsonformate[0].FDis);
+                $("#txtInclusive").val(jsonformate[0].Inclusive);
+                $("#txtMaxInvQty").val(jsonformate[0].MaxInvQty);
+                $("#txtLocks").val(jsonformate[0].LockScm);
+                $("#txtMaxDis").val(jsonformate[0].MaxDis);
+                $("#txtBarCode2").val(jsonformate[0].Batchcode);
+                $("#txtDefQty").val(jsonformate[0].Defqty);
+                $("#txtVolume").val("0");
+                $("#txtCompNameBC").val(jsonformate[0].cname_bc);
+                $("#txtCommanItem").val(jsonformate[0].CommonItem);
+                $("#txtPrescriptionReq").val(jsonformate[0].PresReq);
+                $("#txtSeriesLock").val(jsonformate[0].SeriesLock);
+                $("#txtCurrentScheme").val(jsonformate[0].currentScm);
+                $("#txtCategory").val(jsonformate[0].ItemType);
+                $("#txtCategory2").val("00");
+                $("#txtCommodityCode").val("CommodityCode ");
+                $("#txtCommodityCode2").val("CommodityCodeName");
+                $("#txtGenerics1").val("--");
+                $("#txtGenerics11").val("GenericsName");
+                $("#txtGenerics12").val(jsonformate[0].SubStrenght);
+                $("#txtGenerics2").val("---");
+                $("#txtGenerics21").val("GName");
+                $("#txtGenerics22").val(jsonformate[0].SubStrenght);
+                $("#txtGenerics3").val("00");
+                $("#txtGenerics31").val("");
+                $("#txtGenerics32").val("");
+                $("#txtGenerics4").val("00");
+                $("#txtGenerics41").val("");
+                $("#txtGenerics42").val("");
+                $("#txtOtherGenerics5 ").val("00");
+                $("#txtOtherGenerics51").val("");
+                $("#txtOtherGenerics52").val("");
+                $("#txtOtherGenerics6 ").val("00");
+                $("#txtOtherGenerics61").val("");
+                $("#txtOtherGenerics62").val("");
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+            }
+        });
+    }
+    $(document).ready(function () {
+        var ItemCode = '@ViewBag.ItemCode';
+        Get_ItemCode(ItemCode);
+    })
+
+</script>

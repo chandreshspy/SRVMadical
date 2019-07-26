@@ -1,0 +1,76 @@
+﻿@{
+
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>OURSERVICES</title>
+</head>
+<div class="container">
+    <div class="panel panel-default">
+        <div class="table-responsive">
+            <table class="table">
+                @if (Model != null)
+                {
+                    <tr>
+                        <td></td>
+                        <td>
+                            <strong> Banner Image</strong>
+                        </td>
+                        <td></td>
+                        <td><strong>Heding</strong></td>
+                        <td></td>
+                        <td><strong>SubHeding</strong></td>
+                        <td></td>
+                    </tr>
+                    foreach (var item in Model.HomePage)
+                    {
+                        <tr>
+                            <td></td>
+                            <td>
+                                <img src='/ImageData/Home/@item.file' style="width:55%;" />
+                            </td>
+                            <td></td>
+                            <td>@item.Heding</td>
+                            <td></td>
+                            <td>@item.subHeding</td>
+                            <td><input id="btndelete" onclick="btnDelete(@item.ImgID)" class="btn btn-success" type="submit" value="Delete" /></td>
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="table-responsive">
+            <form name='frmAccount' id='frmAccount'>
+                <table class="table">
+                    <tr>
+                        <td class="btn btn-info btn-file">
+                            <input type="file" id="file" name="file" multiple>
+                        </td>
+                        <td>
+                            <label for="file">Service Heding</label>
+                        </td>
+                        <td><input type="text" id="ServiceHeding" name="ServiceHeding" /></td>
+                        <td>
+                            <label for="file">Service Content </label>
+                        </td>
+                        <td><input type="text" id="ServiceContant" name="ServiceContant" /></td>
+                    </tr>
+
+                </table>
+            </form>
+            <table class="table">
+                <tr style="margin-top: 20px;" class="col-sm-4 col-xs-12 col-lg-6 col-md-4">
+                    <td>  <input id="btnUpload" class="btn btn-success" type="submit" value="Add Service" /></td>
+                </tr>
+            </table>
+            </div>
+    </div>
+
+</div>

@@ -1,0 +1,410 @@
+﻿
+@{
+    ViewBag.Title = "Item Details";
+    Layout = "~/Views/Shared/navigation.cshtml";
+}
+
+<head>
+    <link href="~/css/itemmaster.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <h3 class="h1">-: ITEM NAME :- </h3>
+    <div class="signup-form" id="fomIteams">
+        <form method="post">
+            <div class="row">
+                <div class="col-md-10" style="border: 2px solid #777; padding:10px;">
+                    <table>
+                        <tr>
+                            <td>
+                                <input class="form-control mr-sm-2" type="text" id="CompanySearch" onkeyup="SearchCompanys()" placeholder="Search String" aria-label="Search">
+                                @*</form>*@
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="max-height : 400px; overflow : auto;">
+                        <table class="table" id="dvItems"></table>
+                    </div>
+
+
+                    <div class="col-md-2" style="border-top:2px solid #777;">
+                        <div class="row">
+                            <h3 class="head"> Item Details</h3>
+                            <br>
+                            <br>
+
+                            <label class="col-lg-offset-1 control-label"> Total Unit :</label>
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-1 control-label"> Pack unit : </label>
+
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-3 control-label"> Pack :</label>
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-2 control-label"> Loose :</label>
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-1 control-label"> Min. Qty. :</label>
+                            <text class="col-md-2">  </text>
+
+                            <label class="col-lg-offset-1 control-label"> Max. Qty. :</label>
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-1 control-label"> Category :</label>
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-1 control-label"> Divison :</label>
+                            <text class="col-md-2">  </text>
+                            <br>
+                            <br>
+                            <label class="col-lg-offset-1 control-label"> Central Code :</label>
+                            <text class="col-md-2">  </text>
+                        </div>
+                    </div>
+                    <div class="col-md-3" style="border-top: 2px solid #777;">
+                        <br>
+                        <br>
+                        <br>
+                        <div class="row">
+
+
+
+                            <label class="col-lg-offset-6 control-label"> MRP :</label>
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-6 control-label"> Cost :</label>
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-3 control-label"> Cost + GST :</label>
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-4 control-label"> CostWFQ  :</label>
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-4 control-label"> Margin% :</label>
+                            <text class="col-md-2">  </text>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <label class="col-lg-offset-5 control-label"> Box :</label>
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-5 control-label"> Case :</label>
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-5 control-label"> Status :</label>
+                            <text class="col-md-2">  </text>
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-2" style="border-top:2px solid #777;">
+                        <div class="row">
+                            <h3 class="head"> Sale Details</h3>
+                            <br>
+                            <br>
+
+                            <label class="col-lg-offset-1 control-label"> S Rate :</label>
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-0 control-label"> F.T Rate : </label>
+
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-0 control-label"> W.S Rate :</label>
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-0 control-label"> F.T Rate :</label>
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-0 control-label"> SPL Rate :</label>
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-0 control-label"> F.T Rate :</label>
+                            <text class="col-md-2">  </text>
+                            <br>
+                            <br>
+                            <br>
+                            <label class="col-lg-offset-0 control-label"> Item Type :</label>
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-0 control-label"> Location :</label>
+                            <text class="col-md-2">  </text>
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-2" style="border-top:2px solid #777;">
+                        <div class="row">
+                            <h3 class="head"> Purchase Details</h3>
+                            <br>
+                            <br>
+
+                            <label class="col-lg-offset-1 control-label"> Pur. Rate :</label>
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-1 control-label"> F.T Rate : </label>
+
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-4 control-label"> NR :</label>
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-0 control-label"> Pur Mar% :</label>
+                            <text class="col-md-2">  </text>
+                            <br>
+                            <br>
+                            <br>
+                            <label class="col-lg-offset-1 control-label"> Scheme :</label>
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-1 control-label"> Excise :</label>
+                            <text class="col-md-2">  </text>
+                            <br>
+                            <br>
+                            <br>
+                            <label class="col-lg-offset-1 control-label"> E S code :</label>
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-0 control-label"> Code :</label>
+                            <text class="col-md-2">  </text>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-2" style="border-top:2px solid #777;">
+                        <div class="row">
+                            <h3 class="head"> Other Details</h3>
+                            <br>
+                            <br>
+
+                            <label class="col-lg-offset-1 control-label"> GST(%) :</label>
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-1 control-label"> Expiry : </label>
+
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-0 control-label"> Inclusive :</label>
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-0 control-label"> Pres. Req :</label>
+                            <text class="col-md-2">  </text>
+
+                            <label class="col-lg-offset-0 control-label"> Label Qty :</label>
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-0 control-label"> Bar Code :</label>
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-1 control-label"> Def Qty :</label>
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-0 control-label"> C Name BC :</label>
+                            <text class="col-md-2">  </text>
+                            <label class="col-lg-offset-0 control-label"> Series :</label>
+                            <text class="col-md-2">  </text>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-2" style="border: 2px solid #777;">
+                    <div class="row">
+                        <a href="@Url.Action("AddUpdateItems", "Master")" id="itemNew" class="col-md-6  btn-link"> New(F9) </a>
+                        <a href="@Url.Action("itemEdit", "Master")" id="itemEdit" class="col-md-6  btn-link"> Edit(F3)</a>
+                        <a href="#" class="col-md-6  btn-link"> Delete </a>
+                        <a href="#" class="col-md-6  btn-link"> Exit</a><hr />
+                        <a href="#" class="col-md-6  btn-link"> Batches(F5)</a>
+                        <a href="#" class="col-md-6  btn-link"> AllBatches</a>
+                        <a href="#" class="col-md-12  btn-link"> Stock Ledger (F10)</a>
+                        <a href="#" class="col-md-12  btn-link"> Selected Company </a>
+                        <a href="#" class="col-md-12  btn-link"> Pending Order</a>
+                        <a href="#" class="col-md-12  btn-link"> Godown Expiry </a>
+                        <a href="#" class="col-md-12  btn-link"> Expiry Lodger</a>
+                        <a href="#" class="col-md-12  btn-link"> Subsitute(tab)</a>
+                        <a href="#" class="col-md-12  btn-link"> Subsitute As Per salt</a>
+                        <a href="#" class="col-md-12  btn-link"> Copy salt To</a>
+                        <a href="#" class="col-md-12  btn-link"> Petty Sale(End)</a>
+                        <a href="#" class="col-md-12  btn-link"> Importent Details</a>
+
+                        <label class="col-md-12"> </label>
+                        <br>
+                        <button class="col-md-12"> Multiple salt search</button>
+                        <label class="col-md-12"> </label>
+                        <br>
+                        <br>
+                        <button class="col-md-6"> FreeItem</button>
+                        <button class="col-md-6"> SplRates</button>
+                        <label class="col-md-12"> </label>
+                        <br>
+                        <button class="col-md-12"> Copy HSN Code to</button>
+                        <button class="col-md-6"> ExportHSN</button>
+                        <button class="col-md-6"> UpdateHSN</button>
+                        <label class="col-md-12"> </label>
+                        <br>
+                        <button class="col-md-6"> HSN F6</button>
+                        <button class="col-md-2"> TC</button>
+                        <label class="col-md-12"> </label>
+                        <br>
+                        <br>
+
+                        <label class="col-md-12">Search By </label>
+                        <button class="col-md-12"> 1. Split Name</button>
+                        <button class="col-md-12"> 2. Bar Code</button>
+                        <button class="col-md-12"> 3.Location</button>
+                        <button class="col-md-12"> 4.Pack</button>
+                        <button class="col-md-12">5. MRP</button>
+                        <button class="col-md-6">6.BC</button>
+                        <button class="col-md-6">7. Batch</button>
+                        <button class="col-md-12">8.HSN</button>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+
+<script>
+function AddIteams() {
+                           
+                            var formData = new FormData($('#fomIteams')[0]);
+                            $.ajax({
+                                url: '../Master/AddUpdateItems',
+                                type: "POST",
+                                contentType: false, // Not to set any content header
+                                processData: false, // Not to process data
+                                data: formData,
+                                success: function (result) {
+                                    var res = result;
+                                }
+                            });
+    }
+
+    function Get_ItemCode(code) {
+        alert(code);
+         
+        var Urls = "../Master/itemEdit";
+
+        $.ajax({
+            url: Urls,
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            data: '{"code":' + code + '}', // pass that text to the server as a correct JSON String
+            success: function (data) {
+                window.location.href = data.redirectTo + "?xyz=" + code ; 
+                //var abc = data.redirectTo1;
+                //jQuery.parseJSON(abc);
+                //var myJSON = JSON.stringify(abc);
+                //$("Name").innerText = myJSON.name;
+                //$.each(myJSON, function (idx, obj) {
+                //    alert(obj.name);
+                //});
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                alert("fddsfsdf");
+            }
+        });
+
+    }
+    
+ function SearchCompanys() {
+     var input, filter, table, tr, td, i, txtValue;
+     input = document.getElementById("CompanySearch");
+     filter = input.value.toUpperCase();
+     table = document.getElementById("dvItems");
+     tr = table.getElementsByTagName("tr");
+     for (i = 0; i < tr.length; i++) {
+         td = tr[i].getElementsByTagName("td")[0];
+         if (td) {
+             txtValue = td.textContent || td.innerText;
+             if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                 tr[i].style.display = "";
+             } else {
+                 tr[i].style.display = "none";
+             }
+         }
+     }
+    }
+
+ //$(document).ready(function () {
+ //    GetCompanys();
+ //   });
+
+
+
+ function Get_CompanyCode(code) {
+     alert(code.id);
+     var formData = new FormData($('#fomIteams')[0]);
+     $.ajax({
+         url: '../Master/AddUpdateItems',
+         type: "POST",
+         contentType: false, // Not to set any content header
+         processData: false, // Not to process data
+         data: formData,
+         success: function (result) {
+             var res = result;
+         }
+     });
+ }
+    $(document).ready(function () {
+        GetItems();
+    });
+    function GetItems() {
+        var ItemDtls = "";
+        var Urls = "../Master/GetItems";
+        //var Urls = window.location.pathname + "/Proteus/GetLoginDetails";
+       // var data = JSON.stringify({});
+        $.ajax({
+            url: Urls,
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            data: {}, // pass that text to the server as a correct JSON String
+            success: function (data) {
+                // var JString = resp.data;
+                var JString = data
+                dsnew = JSON.parse(JString);
+
+                if (dsnew && dsnew != 'null') {
+                    ItemDtls = "<thead class='thead-dark'>" +
+                        "<tr><th scope='col'>Name</th>" +
+                        "<th scope='col'>HSN Code</th>" +
+                        "<th scope='col'>Pack</th>" +
+                        "<th scope='col'>Company</th>" +
+                        "<th scope='col'>Qty.</th></tr></thead><tbody>"
+                    for (var i = 0; i <= dsnew.Table.length - 1; i++) {
+                        ItemDtls += "<tr onclick='Get_ItemCode(" + dsnew.Table[i].code + ");'><td>" + dsnew.Table[i].Name + "</td><td>" + dsnew.Table[i].HSNCode + "</td><td>" + dsnew.Table[i].pack + "</td><td>" + dsnew.Table[i].compname + "</td><td>" + dsnew.Table[i].clqty + "</td></tr>"
+                    }
+                    ItemDtls += "</tbody>";
+                }
+                $("#dvItems").html(ItemDtls);
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                alert("fddsfsdf");
+            }
+        });
+
+    }
+ function GetCompanys() {
+     var CompanyDtls = "";
+     var Urls = "../CompanyMaster/GetCompanys";
+     //var Urls = window.location.pathname + "/Proteus/GetLoginDetails";
+     var data = JSON.stringify({});
+     $.ajax({
+         url: Urls,
+         type: "POST",
+         contentType: "application/json; charset=utf-8",
+         dataType: "json",
+         data: data, // pass that text to the server as a correct JSON String
+         success: function (resp) {
+             // var JString = resp.data;
+             var JString = resp
+             dsnew = JSON.parse(JString);
+
+             if (dsnew && dsnew != 'null') {
+                 CompanyDtls = "<thead class='thead-dark'>" +
+                     "<tr><th scope='col'>Name</th>" +
+                     "<th scope='col'>Shortname</th>" +
+                     "</tr></thead><tbody>"
+                 for (var i = 0; i <= dsnew.Table.length - 1; i++) {
+                     var str = "&#39;" + dsnew.Table[i].Name + "&#39;";
+                    // alert(str);
+                     //return ReAssign(\'' + valuationId + '\',\'' + user + '\')"
+                     CompanyDtls += "<tr ><td id='" + dsnew.Table[i].Name + "' onclick=Get_CompanyCode(this);>" + dsnew.Table[i].Name + "</td><td>" + dsnew.Table[i].Shortname + "</td></tr>"
+                 }
+                 CompanyDtls += "</tbody>";
+             }
+             $("#dvCompanys").html(CompanyDtls);
+         },
+         //error: function (xhr, ajaxOptions, thrownError) {
+         //}
+     });
+
+ }
+
+</script>
+
+
+ 
+                 

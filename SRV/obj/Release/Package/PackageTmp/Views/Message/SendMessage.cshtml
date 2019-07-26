@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "Send Message";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container">
+    <div class="panel panel-default">
+        <div class="table-responsive">
+            <form name='frmAccount' id='frmAccount'>
+                <table class="table">
+                    <tr><strong>Message Us Details</strong></tr>
+                    <tr>
+                        @*<td>
+                            <label>Subject </label>
+                        </td>
+                        <td>
+                            <input type="text" id="dvSuject" name="Suject" class="editable" value="" />
+                        </td>*@
+                        <td>
+                            <label>Message</label>
+                        </td>
+                        <td>
+                            <input type="text" id="dvmessage" name="message" class="editable" value="" />
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Enter Number With Comma Seperated</label>
+                        </td>
+                        <td>
+                            <input type="text" id="dvnumberenter" name="numberenter" class="editable" value="" />
+                        </td>
+                    </tr>
+
+                    <tr><td class="btn btn-info btn-file"><input type="file" id="file" name="file" multiple></td></tr>
+                </table>
+            </form>
+            <div style="margin-top: 20px;" class="col-sm-4 col-xs-12 col-lg-6 col-md-4">
+                <input id="btnaboutus" class="btn btn-success" onclick="AddDetails()" type="submit" value="Send Message" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    function AddDetails() {
+        var fileUpload = $("#file").get(0);
+        var files = fileUpload.files;
+        var fileData = new FormData();
+        for (var i = 0; i < files.length; i++) {
+            fileData.append(files[i].name, files[i]);
+        }
+        var formData = new FormData($('#frmAccount')[0]);
+        $.ajax({
+            url: '../Message/SendMessage',
+            type: "POST",
+            contentType: false, // Not to set any content header
+            processData: false, // Not to process data
+            data: formData,
+            success: function (result) {
+                var res = result;
+            }
+        });
+    }
+</script>
