@@ -17,5 +17,10 @@ namespace SRV.Controllers
         {
             return View();
         }
+
+        public ActionResult Purches()
+        {
+            return View();
+        }
     }
 }
