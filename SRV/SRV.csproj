@@ -201,6 +201,7 @@
     <Content Include="Views\Sale\Sale.cshtml" />
     <Content Include="Views\Sale\Modification.cshtml" />
     <Content Include="Views\Purches\PurchesIteams.cshtml" />
+    <Content Include="Views\CompanyMaster\CompanyNew.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
