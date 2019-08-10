@@ -1,0 +1,233 @@
+﻿
+@{
+    ViewBag.Title = "CompanyNew";
+    Layout = "~/Views/Shared/navigation.cshtml";
+}
+<head>
+    <link href="~/css/itemmaster.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+    <h1 class="h1">-: COMPANY MASTER :- </h1>
+    <div class="signup-form">
+        <form id="FormNewCompany">
+            <div class="col-md-12" style="border: 2px solid #777; padding:10px;">
+                <div class="row" style="text-align:right;">
+                    <label class="col-md-2 control-label">Name :</label>
+                    <div class="col-md-4 inputGroupContainer"><input type="text" class="form-control" id="txtName" name="Name" required="required"></div>
+                    <label class="col-md-1 control-label" style="text-align:right;">AlterCode:</label>
+                    <div class="col-md-4 inputGroupContainer"><input type="text" class="form-control" id="txtAlterCode" name="AlterCode" required="required"></div>
+                </div>
+                <div class="row" style="text-align:right;">
+                    <label class="col-md-2 control-label" style="text-align:right;">Address :</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <input type="text" class="form-control" id="txtAddress" name="Address" required="required">
+                    </div>
+                    <label class="col-md-1 control-label" style="text-align:right;">Telephone:</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <input type="text" class="form-control" id="txtTelephone" name="Telephone" required="required">
+                    </div>
+                </div>
+                <div class="row" style="text-align:right;">
+                    <label class="col-md-2 control-label" style="text-align:right;"></label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <input type="text" class="form-control" id="txtAddress2" name="Address2" required="required">
+                    </div>
+                    <label class="col-md-1 control-label" style="text-align:right;"></label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <input type="text" class="form-control" id="txtTelephone1" name="Telephone1" required="required">
+                    </div>
+                </div>
+                <div class="row" style="text-align:right;">
+                    <label class="col-md-2 control-label" style="text-align:right;"></label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <input type="text" class="form-control" id="txtAddress3" name="Address3" required="required">
+                    </div>
+                    <label class="col-md-2 control-label" style="text-align:left;margin-right:-96px;">Short Name:</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <input type="text" class="form-control" id="txtShortName" name="ShortName" required="required">
+                    </div>
+                </div>
+                <div class="row" style="text-align:right;">
+                    <label class="col-md-2 control-label" style="text-align:right;">Email :</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <input type="text" class="form-control" id="txtEmail" name="Email" required="required">
+                    </div>
+                    <label class="col-md-1 control-label" style="text-align:right;">Location:</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <input type="text" class="form-control" id="txtLocation" name="Location" required="required">
+                    </div>
+                </div>
+                <div class="row" style="text-align:right;">
+                    <label class="col-md-2 control-label" style="text-align:right;">Contact Person I :</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <input type="text" class="form-control" id="txtContactPerson" name="ContactPerson" required="required">
+                    </div>
+                    <label class="col-md-1 control-label" style="text-align:right;">Mobile I:</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <input type="text" class="form-control" id="txtMobileI" name="MobileI" required="required">
+                    </div>
+                </div>
+                <div class="row" style="text-align:right;">
+                    <label class="col-md-2 control-label" style="text-align:right;">Contact Person II :</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <input type="text" class="form-control" id="txtContactPersonII " name="ContactPersonII " required="required">
+                    </div>
+                    <label class="col-md-1 control-label" style="text-align:right;">Mobile II:</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <input type="text" class="form-control" id="txtMobileII" name="MobileII" required="required">
+                    </div>
+                </div>
+                <div class="row" style="text-align:right;">
+                    <label class="col-md-2 control-label" style="text-align:right;">Website :</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <input type="text" class="form-control" id="txtWebsite" name="Website" required="required">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-12" style="border:2px solid black;text-align:right;">
+
+                <div class="col-md-12" style="margin-top: 15px;">
+                    <div class="row">
+                        <label class="col-sm-1 control-label">Expiry :</label>
+                        <div class="col-md-1">
+                            <input type="text" class="form-control" id="txtExpiry" name="Expiry" required="required">
+                        </div>
+                        <label class="col-sm-1 control-label">Min G.P. :</label>
+                        <div class="col-md-1">
+                            <input type="text" class="form-control" id="txtMinGP" name="MinGP" required="required">
+                        </div>
+                        <label class="col-sm-1 control-label">Vat% :</label>
+                        <div class="col-md-1">
+                            <input type="text" class="form-control" id="txtVatP" name="VatP" required="required">
+                        </div>
+                        <label class="col-sm-1 control-label">Genric :</label>
+                        <div class="col-md-1">
+                            <input type="text" class="form-control" id="txtGenric" name="Genric" required="required">
+                        </div>
+                        <label class="col-sm-2 control-label">Inclusive :</label>
+                        <div class="col-md-1">
+                            <input type="text" class="form-control" id="txtInclusive" name="Inclusive" required="required">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-2 control-label">Company Group :</label>
+                        <div class="col-md-1">
+                            <input type="text" class="form-control" id="txtCompanyGroup" name="CompanyGroup" required="required">
+                        </div>
+                        <div class="col-md-1">
+                            <input type="text" class="form-control" id="txtCompanyGroup1" name="CompanyGroup1" required="required">
+                        </div>
+                        <label class="col-sm-2 control-label">F(ixed)/M(aximum) :</label>
+                        <div class="col-md-1">
+                            <input type="text" class="form-control" id="txtFixedMaximum" name="FixedMaximum" required="required">
+                        </div>
+                        <label class="col-sm-2 control-label">Discount :</label>
+                        <div class="col-md-1">
+                            <input type="text" class="form-control" id="txtDiscount" name="Discount" required="required">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-1 control-label">status :</label>
+                        <div class="col-md-1">
+                            <input type="text" class="form-control" id="txtstatus" name="status" required="required">
+                        </div>
+                        <label class="col-sm-1 control-label">Lock Negative Billing :</label>
+                        <div class="col-md-1">
+                            <input type="text" class="form-control" id="txtLockNegativeBilling" name="LockNegativeBilling" required="required">
+                        </div>
+                        <label class="col-sm-1 control-label">Lock Billing :</label>
+                        <div class="col-md-1">
+                            <input type="text" class="form-control" id="txtLockBilling" name="LockBilling" required="required">
+                        </div>
+                        <label class="col-sm-1 control-label">Lock AIOCD :</label>
+                        <div class="col-md-1">
+                            <input type="text" class="form-control" id="txtLockAIOCD" name="LockAIOCD" required="required">
+                        </div>
+                        <label class="col-sm-2 control-label">Lock IMS :</label>
+                        <div class="col-md-1">
+                            <input type="text" class="form-control" id="txtLockIMS" name="LockIMS" required="required">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-12" style="border:2px solid black;text-align:right;">
+                <div style="padding-left:800px;margin-top:12px;">
+                    <input type="button" class="btn btn-default" value="Save" id="btnSave" onclick="addNewCompany();" name="SRate">
+                    <input type="button" class="btn btn-default" value="Exit" id="btnExit" name="SRate">
+                </div>
+                <div class="col-md-1" style="margin-top: 15px;">
+                    <div class="row">
+
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        var compCode = GetParameterValues('compCode');
+        if (compCode != "")
+        {
+            $.ajax({
+                url: '../CompanyMaster/Companyedit',
+                type: "POST",
+                contentType: false, // Not to set any content header
+                processData: false, // Not to process data
+                data: formData,
+                success: function (result) {
+                    var res = result;
+                }
+            });
+        }
+        function GetParameterValues(param) {
+            var url = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+            if (url.length > 0) {
+                for (var i = 0; i < url.length; i++) {
+                    var urlparam = url[i].split('=');
+                    if (urlparam[0] == param) {
+                        return urlparam[1];
+                    }
+                }
+            }
+            else
+                return "";
+        }
+    });
+    function addNewCompany() {
+        var Urls = "../CompanyMaster/AddCompanyDetails";
+        var formData = new FormData($('#FormNewCompany')[0]);
+        //var data = JSON.stringify({ compCode });
+        $.ajax({
+            url: '../CompanyMaster/AddCompanyDetails',
+            type: "POST",
+            contentType: false, // Not to set any content header
+            processData: false, // Not to process data
+            data: formData,
+            success: function (result) {
+                var res = result;
+            }
+            //url: Urls,
+            //type: "POST",
+            //contentType: "application/json; charset=utf-8",
+            //dataType: "json",
+            //data: formData, // pass that text to the server as a correct JSON String
+            //success: function (resp) {
+            //    var JString = resp
+            //    var dsnew = JSON.parse(JString);
+            //    if (dsnew && dsnew != 'null') {
+
+            //    }
+
+            //},
+            ////error: function (xhr, ajaxOptions, thrownError) {
+            ////}
+        });
+    }
+</script>
+
