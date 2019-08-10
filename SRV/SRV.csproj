@@ -167,6 +167,7 @@
     <Content Include="bin\System.Web.Webpages.Razor.dll" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\Comman.css" />
     <Content Include="Content\css\navbar.css" />
     <Content Include="Content\css\ViewPage\Company.css" />
     <Content Include="Content\js\navbar.js" />
@@ -198,6 +199,8 @@
     <Content Include="Views\Master\AddUpdateItems.cshtml" />
     <Content Include="Views\Master\ItemDetail.cshtml" />
     <Content Include="Views\Sale\Sale.cshtml" />
+    <Content Include="Views\Sale\Modification.cshtml" />
+    <Content Include="Views\Purches\PurchesIteams.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -214,6 +217,7 @@
     <Compile Include="Controllers\IteamMasterController.cs" />
     <Compile Include="Controllers\masteraController.cs" />
     <Compile Include="Controllers\MasterController.cs" />
+    <Compile Include="Controllers\PurchesController.cs" />
     <Compile Include="Controllers\SaleController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -243,6 +247,7 @@
   <ItemGroup>
     <Folder Include="js\" />
     <Folder Include="Views\Dashboard\" />
+    <Folder Include="Views\Transaction\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ClientBLL\ClientBLL.csproj">

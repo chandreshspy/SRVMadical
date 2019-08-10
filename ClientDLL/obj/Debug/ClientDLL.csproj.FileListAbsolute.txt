@@ -142,3 +142,13 @@ F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\ClientDLL\bin\Debug\HiQPdf
 F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\ClientDLL\obj\Debug\ClientDLL.csprojResolveAssemblyReference.cache
 F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\ClientDLL\obj\Debug\ClientDLL.dll
 F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\ClientDLL\obj\Debug\ClientDLL.pdb
+F:\RunningProjectSrv\Medical\GitMadical\SRVMadical\ClientDLL\bin\Debug\ClientDLL.dll
+F:\RunningProjectSrv\Medical\GitMadical\SRVMadical\ClientDLL\bin\Debug\ClientDLL.pdb
+F:\RunningProjectSrv\Medical\GitMadical\SRVMadical\ClientDLL\bin\Debug\EntityModel.dll
+F:\RunningProjectSrv\Medical\GitMadical\SRVMadical\ClientDLL\bin\Debug\HiQPdf.Free.dll
+F:\RunningProjectSrv\Medical\GitMadical\SRVMadical\ClientDLL\bin\Debug\EntityModel.pdb
+F:\RunningProjectSrv\Medical\GitMadical\SRVMadical\ClientDLL\bin\Debug\HiQPdf.Free.xml
+F:\RunningProjectSrv\Medical\GitMadical\SRVMadical\ClientDLL\bin\Debug\HiQPdf.dep
+F:\RunningProjectSrv\Medical\GitMadical\SRVMadical\ClientDLL\obj\Debug\ClientDLL.csprojResolveAssemblyReference.cache
+F:\RunningProjectSrv\Medical\GitMadical\SRVMadical\ClientDLL\obj\Debug\ClientDLL.dll
+F:\RunningProjectSrv\Medical\GitMadical\SRVMadical\ClientDLL\obj\Debug\ClientDLL.pdb

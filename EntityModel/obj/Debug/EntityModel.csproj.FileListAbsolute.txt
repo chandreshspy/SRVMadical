@@ -8,3 +8,8 @@ F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\EntityModel\bin\Debug\Enti
 F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\EntityModel\obj\Debug\EntityModel.csprojResolveAssemblyReference.cache
 F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\EntityModel\obj\Debug\EntityModel.dll
 F:\RunningProjectSrv\Medical\NLatestSrv\SRVGit\SRVGit\EntityModel\obj\Debug\EntityModel.pdb
+F:\RunningProjectSrv\Medical\GitMadical\SRVMadical\EntityModel\bin\Debug\EntityModel.dll
+F:\RunningProjectSrv\Medical\GitMadical\SRVMadical\EntityModel\bin\Debug\EntityModel.pdb
+F:\RunningProjectSrv\Medical\GitMadical\SRVMadical\EntityModel\obj\Debug\EntityModel.csprojResolveAssemblyReference.cache
+F:\RunningProjectSrv\Medical\GitMadical\SRVMadical\EntityModel\obj\Debug\EntityModel.dll
+F:\RunningProjectSrv\Medical\GitMadical\SRVMadical\EntityModel\obj\Debug\EntityModel.pdb

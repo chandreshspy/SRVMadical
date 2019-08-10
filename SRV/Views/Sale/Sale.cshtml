@@ -3,118 +3,12 @@
     ViewBag.Title = "Sale";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<style type="text/css">
-    body {
-        color: #fff;
-        background: #63738a;
-        font-family: 'Roboto', sans-serif;
+<style>
+    .highlight {
+        background-color: yellow;
     }
-
-    .form-control {
-        height: 22px;
-        box-shadow: none;
-        color: #969fa4;
-        border: 2px solid #ccc;
-        padding: 0px 0px;
-    }
-
-        .form-control:focus {
-            border-color: #5cb85c;
-        }
-
-    .form-control, .btn {  
-        border-radius: 3px;
-    }
-
-    .signup-form {
-        width: 90%;
-        margin: 0 auto;
-        padding: 30px 0;
-    }
-
-        .signup-form h2 {
-            color: #636363;
-            margin: 0 0 15px;
-            position: relative;
-            text-align: center;
-        }
-
-            .signup-form h2:before, .signup-form h2:after {
-                content: "";
-                height: 2px;
-                width: 30%;
-                background: #d4d4d4;
-                position: absolute;
-                top: 50%;
-                z-index: 2;
-            }
-
-            .signup-form h2:before {
-                left: 0;
-            }
-
-            .signup-form h2:after {
-                right: 0;
-            }
-
-        .signup-form .hint-text {
-            color: #999;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        .signup-form form {
-            color: #999;
-            border-radius: 3px;
-            margin-bottom: 15px;
-            background: #f2f3f7;
-            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-            padding: 30px;
-            max-height: 525px;
-            /* height: 525px; */
-            min-height: 825px;
-        }
-
-        .signup-form input[type="checkbox"] {
-            margin-top: 3px;
-        }
-
-        .signup-form .btn {
-            font-size: 16px;
-            font-weight: bold;
-            min-width: 140px;
-            outline: none !important;
-        }
-
-        .signup-form .row div:first-child {
-            padding-right: 10px;
-            margin-bottom: 6px;
-        }
-
-        .signup-form .row div:last-child {
-            padding-left: 10px;
-            margin-bottom: 6px;
-        }
-
-        .signup-form a {
-            color: #fff;
-            text-decoration: underline;
-        }
-
-            .signup-form a:hover {
-                text-decoration: none;
-            }
-
-        .signup-form form a {
-            color: #5cb85c;
-            text-decoration: none;
-        }
-
-            .signup-form form a:hover {
-                text-decoration: underline;
-            }
 </style>
+<link href="~/Content/css/Comman.css" rel="stylesheet" />
 <div class="signup-form">
     <form method="post">
 
@@ -161,7 +55,20 @@
                 <label class="col-md-1 control-label">Incl.Rate</label>
                 <label class="col-md-1 control-label">Amount</label>
             </div>
-            <div class="row" style="background-color: #ccc;">
+            <div id="BindDynamicRow" class="row" style="background-color: #ccc;height: 150px; overflow-y: scroll;">
+              
+                @*<div class="col-md-1 inputGroupContainer"><input type="text" class="form-control edit" name="Name" required="required"></div>
+                <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>*@
+            </div>
+            @*<div class="row" style="background-color: #ccc;">
                 <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
                 <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
                 <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
@@ -184,19 +91,7 @@
                 <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
                 <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
                 <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
-            </div>
-            <div class="row" style="background-color: #ccc;">
-                <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
-                <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
-                <div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
-                <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
-                <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
-                <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
-                <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
-                <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
-                <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
-                <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
-            </div>
+            </div>*@
             <div class="row">
                 <label class="col-md-1	 control-label">Case:</label>
                 <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
@@ -280,11 +175,201 @@
                 <label class="col-md-1 control-label">Dis.:</label>
                 <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" value="0.00" required="required"></div>
                 <label class="col-md-1 control-label">Net Amt.:</label>
-                <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" value="0.00" required="required"></div>
+                <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control OpenModel" name="Name" value="0.00" required="required"></div>
             </div>
 
         </div>
     </form>
-
+    <div id="ModelShow" class="col-md-12 modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="row" style="margin-top: -69px;background-color: #8dcaded9;border-style: double;">
+                <label class="col-md-1 control-label">BATCH</label>
+                <label class="col-md-2 control-label">DATE</label>
+                <label class="col-md-2 control-label">RATE</label>
+                <label class="col-md-1 control-label">S.C.</label>
+                <label class="col-md-1 control-label">GROSS</label>
+                <label class="col-md-1 control-label">QTY.</label>
+                <label class="col-md-1 control-label">EXP</label>
+                <label class="col-md-1 control-label">CODE</label>
+                <label class="col-md-1 control-label">COST+VAT</label>
+                <label class="col-md-1 control-label">P.Dis.</label>
+            </div>
+            <div class="row" style="background-color: #ccc;height: 50px; overflow-y: scroll;">
+                <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control edit" name="Name" required="required"></div><div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                <div class="col-mmd-1 inputGroupContainer"><input type="text" class="form-control edit" name="Name" required="required"></div><div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+                <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control edit" name="Name" required="required"></div><div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+            </div>
+        </div>
+    </div>
 </div>
+<div id="results" class="col-md-12">
+    @*<table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Color</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody id="data" style="height: 10px !important; overflow: scroll; ">
+            <tr>
+                <td class="filterable-cell">111 Ford</td>
+                <td class="filterable-cell">Escort</td>
+                <td class="filterable-cell">Blue</td>
+                <td class="filterable-cell">2000</td>
+            </tr>
+            <tr>
+                <td class="filterable-cell">Ford</td>
+                <td class="filterable-cell">Escort</td>
+                <td class="filterable-cell">Blue</td>
+                <td class="filterable-cell">2000</td>
+            </tr>
+            <tr>
+                <td class="filterable-cell">Ford</td>
+                <td class="filterable-cell">Escort</td>
+                <td class="filterable-cell">Blue</td>
+                <td class="filterable-cell">2000</td>
+            </tr>
+            <tr>
+                <td class="filterable-cell">Ford</td>
+                <td class="filterable-cell">Escort</td>
+                <td class="filterable-cell">Blue</td>
+                <td class="filterable-cell">2000</td>
+            </tr>
+        </tbody>
 
+    </table>*@
+    @*<table id="data" class="table table-striped" border="1" cellspacing="1" cellpadding="1">
+
+        <thead>
+            <tr class="col-md-12">
+                <th>BATCH</th>
+                <th>DATE</th>
+                <th>RATE</th>
+                <th>S.C.</th>
+                <th>GROSS</th>
+                <th>QTY.</th>
+                <th>EXP.</th>
+                <th>CODE</th>
+                <th>COST+VAT</th>
+                <th>P.Dis.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="col-md-12">
+                <td>1</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>1</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+            </tr>
+           
+        </tbody>
+    </table>*@
+   
+    @*<div class="row" style="background-color: #8dcaded9;border-style: double;">
+        <label class="col-md-1 control-label">BATCH</label>
+        <label class="col-md-2 control-label">DATE</label>
+        <label class="col-md-2 control-label">RATE</label>
+        <label class="col-md-1 control-label">S.C.</label>
+        <label class="col-md-1 control-label">GROSS</label>
+        <label class="col-md-1 control-label">QTY.</label>
+        <label class="col-md-1 control-label">EXP</label>
+        <label class="col-md-1 control-label">CODE</label>
+        <label class="col-md-1 control-label">COST+VAT</label>
+        <label class="col-md-1 control-label">P.Dis.</label>
+    </div>
+    <div class="row" style="background-color: #ccc;height: 50px; overflow-y: scroll;"><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control edit" name="Name" required="required"></div><div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+        <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control edit" name="Name" required="required"></div><div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div>
+        <div class="col-md-1 inputGroupContainer"><input type="text" class="form-control edit" name="Name" required="required"></div><div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-2 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div><div class="col-md-1 inputGroupContainer"><input type="text" class="form-control" name="Name" required="required"></div></div>*@
+</div>
+<div class="modal fade" id="EnSureModal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Do ypu need change </h4>
+            </div>
+            <div class="modal-body">
+                <p>Are u sure from </p>
+                <label id="FromDate"></label>
+                <p>To</p>
+                <label id="ToDate"></label>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">no</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">yes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function highlight(tableIndex) {
+        // Just a simple check. If .highlight has reached the last, start again
+        if ((tableIndex + 1) > $('#data tbody tr').length)
+            tableIndex = 0;
+
+        // Element exists?
+        if ($('#data tbody tr:eq(' + tableIndex + ')').length > 0) {
+            // Remove other highlights
+            $('#data tbody tr').removeClass('highlight');
+
+            // Highlight your target
+            $('#data tbody tr:eq(' + tableIndex + ')').addClass('highlight');
+        }
+    }
+
+    function NextDownKey() {
+
+        highlight($('#data tbody tr.highlight').index() + 1);
+    }
+    function NextUpKey() {
+        highlight($('#data tbody tr.highlight').index() - 1);
+    }
+    $(document).keydown(function (e) {
+
+        switch (e.which) {
+            case 38:
+                NextUpKey();
+                break;
+            case 40:
+                NextDownKey();
+                break;
+        }
+
+    });
+    $(document).ready(function () {
+        BindDynamicRow();
+    });
+    $('.OpenModel').click(function () {
+        $("#EnSureModal").modal();
+        //$('#ModelShow').modal('show');
+        //window.location.href = "/Master/Itemdetail";
+        //var url = $(this).attr('href');
+        //window.open("/Master/Itemdetail", "popupWindow", "width=900,height=600,scrollbars=yes");
+        return false;
+    });
+
+    function BindDynamicRow() {
+        var BindRow = "";
+        for (var i = 0; i <= 20; i++) {
+            BindRow += "<div class='col-md-1 inputGroupContainer'><input type='text' class='form-control edit' name='Name' required='required'></div>" +
+                    "<div class='col-md-2 inputGroupContainer'><input type='text' class='form-control' name='Name' required='required'></div>" +
+                    "<div class='col-md-2 inputGroupContainer'><input type='text' class='form-control' name='Name' required='required'></div>" +
+                    "<div class='col-md-1 inputGroupContainer'><input type='text' class='form-control' name='Name' required='required'></div>" +
+                    "<div class='col-md-1 inputGroupContainer'><input type='text' class='form-control' name='Name' required='required'></div>" +
+                   "<div class='col-md-1 inputGroupContainer'><input type='text' class='form-control' name='Name' required='required'></div>" +
+                    "<div class='col-md-1 inputGroupContainer'><input type='text' class='form-control' name='Name' required='required'></div>" +
+                    "<div class='col-md-1 inputGroupContainer'><input type='text' class='form-control' name='Name' required='required'></div>" +
+                    "<div class='col-md-1 inputGroupContainer'><input type='text' class='form-control' name='Name' required='required'></div>" +
+                    "<div class='col-md-1 inputGroupContainer'><input type='text' class='form-control' name='Name' required='required'></div>";
+        }
+        $("#BindDynamicRow").html(BindRow);
+    }
+</script>
